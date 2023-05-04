@@ -6,7 +6,9 @@ public class MovePlayer : MonoBehaviour
 {
     Rigidbody2D Rb2D;
     [SerializeField] float speedPlayer; //Variavel flutuante responsavel em definir a velocidade do player
-    [SerializeField] float speedJump; //Variavel flutuante responsavel em definir a velocidade de pulo do player
+    [SerializeField] float jumpForce; //Variavel flutuante responsavel em definir a velocidade de pulo do player
+    [SerializeField] Transform GroundCollider;
+    [SerializeField] LayerMask GroundLayer;
     public float xAxis { get; set; } //Variavel flutuante responsavel em definir a direção do player
 
 
@@ -20,6 +22,7 @@ public class MovePlayer : MonoBehaviour
     void Update() //Executa a todo momento
     {
         PlayerMove(); //Metodo responsavel por mover o player
+        PlayerJump(); //Metodo responsavel em fazer o sistema de pulo
         FlipPlayer(); //Metodo responsavel por virar o player de acordo com a direção do mesmo
     }
 
@@ -29,6 +32,19 @@ public class MovePlayer : MonoBehaviour
 
         Rb2D.velocity = new Vector2(xAxis * speedPlayer, Rb2D.velocity.y); //Move o player
 
+    }
+    
+    bool IsGround() //Metodo boleano responsavel em retornar verdadeiro se o player estiver no chão e falso se ele estiver no ar
+    {
+        return Physics2D.OverlapCircle(GroundCollider.position, 0.1f, GroundLayer);
+    }
+
+    private void PlayerJump()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && IsGround()) //Condição caso o jogador aperte o espaço e se o player estiver no chão
+        {
+            Rb2D.velocity = new Vector2(Rb2D.velocity.x, jumpForce); //Define uma velocidade vertical para dar a sensação de pulo
+        }
     }
     private void FlipPlayer()
     {
