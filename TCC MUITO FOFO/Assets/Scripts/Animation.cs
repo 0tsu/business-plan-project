@@ -11,7 +11,8 @@ public class Animation : MonoBehaviour
 
     string currentState; //Cria uma variavel do tipo de texto responsavel pelo controle de estados do personagem
     const string _idle = "PlayerIdle"; //variavel constante do tipo texto que define a animação do player ficar parado
-    const string _walk = "PlayerWalk"; //variavel constante do tipo texto que define a animação do player andar
+    const string _walk = "PlayerRun"; //variavel constante do tipo texto que define a animação do player andar
+    const string _attack = "PlayerAttack";
 
     void Start()
     {
@@ -23,19 +24,30 @@ public class Animation : MonoBehaviour
     void Update() //Executa a todo momento os metodos e funções que estejam na chaves do "Update"
     {
         MoveAnimation(); //Metodo responsavel em definir as animações de movimentação do player
+        AttackAnimation();
     }
 
     void MoveAnimation()
     {
-        //Se o player estiver em movimento ele vai executar a animação de andar
-        if(_player.xAxis != 0)
+        if (!_player._attack)
         {
-            AnimationState(_walk);
+            //Se o player estiver em movimento ele vai executar a animação de andar
+            if (_player.xAxis != 0)
+            {
+                AnimationState(_walk);
+            }
+            //Se não o player vai executar a animação de quando ele estiver parado
+            else
+            {
+                AnimationState(_idle);
+            }
         }
-        //Se não o player vai executar a animação de quando ele estiver parado
-        else
+    }
+    void AttackAnimation()
+    {   
+        if (_player._attack)
         {
-            AnimationState(_idle);
+            AnimationState(_attack);
         }
     }
 
