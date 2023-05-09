@@ -13,9 +13,16 @@ public class MovePlayer : MonoBehaviour
     public float xAxis { get; set; } //Variavel flutuante responsavel em definir a direção do player
     public bool _attack;
     bool onAttack = true;
-    [SerializeField] float time;
+    public int side { get; set; }
+
+    [SerializeField] float fireTime;
+    
+    [SerializeField] GameObject pfBulletPLayer;
+    [SerializeField] Transform spawnBulletPlayer;
+    [SerializeField] Vector3 aa;
     void Start() //Executa apenas uma vez quando inicia o jogo
     {
+        side = 1;
         Application.targetFrameRate = 60; //Codigo que tem como objetivo travar o jogo em 60 quadros por segundo
         QualitySettings.vSyncCount = 0; //Codigo responsavel em desativar o vSync
         Rb2D = GetComponent<Rigidbody2D>(); //Codigo responsavel em pegar os componetes da classe "Rigidbody2D"
@@ -32,7 +39,6 @@ public class MovePlayer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J) && onAttack)
         {
             StartCoroutine(AttackTime());
-
         }
     }
     private void PlayerMove()
@@ -41,7 +47,6 @@ public class MovePlayer : MonoBehaviour
         xAxis = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speedPlayer; //define a direção e a velociade do jogador
 
         Rb2D.velocity = new Vector2(xAxis * speedPlayer, Rb2D.velocity.y); //Move o player
-
     }
     bool IsGround() //Metodo boleano responsavel em retornar verdadeiro se o player estiver no chão e falso se ele estiver no ar
     {
@@ -54,24 +59,22 @@ public class MovePlayer : MonoBehaviour
             Rb2D.velocity = new Vector2(Rb2D.velocity.x, jumpForce); //Define uma velocidade vertical para dar a sensação de pulo
         }
     }
+
     private void FlipPlayer()
     {
+        transform.localScale = new Vector3(side, 1, 1);
         //Se o player apertar a tecla "A" ou a seta da esquerda ele vai virar o player para esquerda
-        if(xAxis < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        side = xAxis < 0 ? -1 : side;
         //Caso ele aperte a tecla "D" ou a seta pra direita ele vai virar o player para direita
-        else if(xAxis > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
+        side = xAxis > 0 ? 1 : side;
     }
+
     private IEnumerator AttackTime()
     {
         onAttack = false;
         _attack = true;
-        yield return new WaitForSeconds(time);
+        GameObject _bullet = Instantiate(pfBulletPLayer, spawnBulletPlayer.position, spawnBulletPlayer.rotation);
+        yield return new WaitForSeconds(fireTime);
         onAttack = true;
         _attack = false;
     }

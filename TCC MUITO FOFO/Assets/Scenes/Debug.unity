@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 182357601}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.609451, y: -3, z: -10}
+  m_LocalPosition: {x: -8.606274, y: -3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813191832}
   - component: {fileID: 813191831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 1010639137}
   - component: {fileID: 1010639138}
   - component: {fileID: 1010639139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,9 +688,12 @@ MonoBehaviour:
   GroundCollider: {fileID: 182357601}
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   _attack: 0
-  time: 0.2
+  fireTime: 0.2
+  pfBulletPLayer: {fileID: 2688458890715878976, guid: cb549031c603b0f4cae81f620a6e7a28, type: 3}
+  spawnBulletPlayer: {fileID: 1679082635}
+  aa: {x: 0, y: 0, z: 0}
 --- !u!114 &1010639139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,7 +718,7 @@ GameObject:
   - component: {fileID: 1206512055}
   - component: {fileID: 1206512054}
   - component: {fileID: 1206512053}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1636,7 +1639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1679082635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
