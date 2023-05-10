@@ -13,14 +13,10 @@ public class Bullet : MonoBehaviour
     {
         _player = FindAnyObjectByType<MovePlayer>();
         GetComponent<Rigidbody2D>().AddForce(new Vector2(bulletForce * _player.side,transform.position.y), ForceMode2D.Impulse);
-        Destroy(gameObject, destroyBullet);
+        //Destroy(gameObject, destroyBullet);
     }
-    /*void Update()
-    {
-        transform.Translate(transform.right * bulletForce * Time.deltaTime);
-    }*/
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
-    }*/
+    }
 }
