@@ -1,0 +1,1488 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.0f1 (fb119bb0b476) revision 16454043'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 15663 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+F:/Git_Study/TCCMuitoFofo/Business Plan Project
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+61438
+Successfully changed project path to: F:/Git_Study/TCCMuitoFofo/Business Plan Project
+F:/Git_Study/TCCMuitoFofo/Business Plan Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10360] Host "[IP] 10.0.0.104 [Port] 0 [Flags] 2 [Guid] 3895931288 [EditorId] 3895931288 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J8UR71B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [10360] Host "[IP] 10.0.0.104 [Port] 0 [Flags] 2 [Guid] 3895931288 [EditorId] 3895931288 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J8UR71B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 14.57 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.0f1 (fb119bb0b476)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Git_Study/TCCMuitoFofo/Business Plan Project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
+    Vendor:   ATI
+    VRAM:     7831 MB
+    Driver:   31.0.12042.4
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013572 seconds.
+- Loaded All Assemblies, in  0.375 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 407 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.709 seconds
+Domain Reload Profiling: 1081ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (158ms)
+		LoadAssemblies (96ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (135ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (709ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (654ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (514ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\Git_Study\TCCMuitoFofo\Business Plan Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\Git_Study\TCCMuitoFofo\Business Plan Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.896 seconds
+Refreshing native plugins compatible for Editor in 6.58 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.800 seconds
+Domain Reload Profiling: 1692ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (671ms)
+		LoadAssemblies (371ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (362ms)
+			TypeCache.Refresh (323ms)
+				TypeCache.ScanAssembly (303ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (630ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (374ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 7.04 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6356 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (0.9 MB). Loaded Objects now: 6832.
+Memory consumption went from 318.7 MB to 317.9 MB.
+Total: 4.906300 ms (FindLiveObjects: 0.485900 ms CreateObjectMapping: 0.442300 ms MarkObjects: 3.472000 ms  DeleteObjects: 0.504400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 258761.870511 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_146.asset
+  artifactKey: Guid(00a1d3a5de78acf42a631513f779188e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_146.asset using Guid(00a1d3a5de78acf42a631513f779188e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0274d1eeb754e7c851335a61d7c689e5') in 0.368616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_145.asset
+  artifactKey: Guid(5dcfc282772a661459e11d941b68107d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_145.asset using Guid(5dcfc282772a661459e11d941b68107d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9771737314c4ec088a0c5be830264b52') in 0.023254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/decorations/lamp.png
+  artifactKey: Guid(e72b4844cf900e54b8f0c84ba67fdc3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/decorations/lamp.png using Guid(e72b4844cf900e54b8f0c84ba67fdc3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0785851732c99c2d5e50a46a0b9013c7') in 0.144874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_101.asset
+  artifactKey: Guid(6b55ecacfffe4cc4ea6d79f4c42a715d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_101.asset using Guid(6b55ecacfffe4cc4ea6d79f4c42a715d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c4025df0f285363e780fe3bac71d7c73') in 0.024650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/readme.TXT
+  artifactKey: Guid(7ab3583fed02ac2458490132692cf0a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/readme.TXT using Guid(7ab3583fed02ac2458490132692cf0a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b10f63f1e07dd2efb040ab3de321649a') in 0.125934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_13.asset
+  artifactKey: Guid(007d13ced1b3c23448a2d332cb21d88d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_13.asset using Guid(007d13ced1b3c23448a2d332cb21d88d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e1b082b2f62f2905b4c907b04fe0d1ae') in 0.035945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_3.asset
+  artifactKey: Guid(edf6ffa843b2cc946af142ac314d2b6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_3.asset using Guid(edf6ffa843b2cc946af142ac314d2b6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '013299f9dd600d4940804c2560bd4c2b') in 0.026029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_131.asset
+  artifactKey: Guid(c6360be926e54114ebcfb588ed6ea312) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_131.asset using Guid(c6360be926e54114ebcfb588ed6ea312) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b06aacba64b0c97ac60a7dfcbc56c45a') in 0.092601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Shader/2dGlow.shadergraph
+  artifactKey: Guid(20d0794117090d848bae8e8f24c502f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Shader/2dGlow.shadergraph using Guid(20d0794117090d848bae8e8f24c502f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1a00ce8b06e8a032e3952a423aa248bc') in 0.036180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_123.asset
+  artifactKey: Guid(3ff8a624fad52254fbb809f48c97dd84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_123.asset using Guid(3ff8a624fad52254fbb809f48c97dd84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '314198c5dd8854f3eb0585cbc125243f') in 0.020575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_121.asset
+  artifactKey: Guid(22d426c451bbc264dbbf8b7f57c7f206) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_121.asset using Guid(22d426c451bbc264dbbf8b7f57c7f206) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '986798328cc8a56ffa328ed04928e218') in 0.028917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_126.asset
+  artifactKey: Guid(5c3ae1bad46b14d4d87f7921d0c4f1ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_126.asset using Guid(5c3ae1bad46b14d4d87f7921d0c4f1ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a49ad77bc51a8ba9d3b061b3619077e4') in 0.019010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_16.asset
+  artifactKey: Guid(d5f0b502960990d4f9405037daa2c1ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_16.asset using Guid(d5f0b502960990d4f9405037daa2c1ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad6ac2195566145fe69ca8a2ce495b11') in 0.083470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_143.asset
+  artifactKey: Guid(6e7bfb8cc4322e147a5d3f72ac3cb7b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_143.asset using Guid(6e7bfb8cc4322e147a5d3f72ac3cb7b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3b2dac35595f6f66271f335940ef73c0') in 0.061381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_109.asset
+  artifactKey: Guid(f0f276c16830b6141aa35085ff1813a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_109.asset using Guid(f0f276c16830b6141aa35085ff1813a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '200ce768a608478bf146941134ca1f39') in 0.050313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_36.asset
+  artifactKey: Guid(e3a56dae48663c544b18beaade5054d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_36.asset using Guid(e3a56dae48663c544b18beaade5054d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f1a805c028176a8335fbf0f35f977e71') in 0.036436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_57.asset
+  artifactKey: Guid(d9e8b8f8477c72841b51273f8d419c02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_57.asset using Guid(d9e8b8f8477c72841b51273f8d419c02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e0394543c4293e93763c1e988d5ae33d') in 0.037926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_48.asset
+  artifactKey: Guid(b49d87eaa65f3ec4d9aa5c8330b36485) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_48.asset using Guid(b49d87eaa65f3ec4d9aa5c8330b36485) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b00eb1ebbf570a7ea19afe81eca029d4') in 0.021919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_5.asset
+  artifactKey: Guid(3b135e19fe0806e4eb1adc5eea8ee438) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_5.asset using Guid(3b135e19fe0806e4eb1adc5eea8ee438) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cf916c297d398a82bda0e3816c5dbcac') in 0.061399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_23.asset
+  artifactKey: Guid(d4bffe1c505af0345973179c13d62b21) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_23.asset using Guid(d4bffe1c505af0345973179c13d62b21) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cae66b5d427110fc43736a0af7fb4fa5') in 0.022031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Scripts/MovePlayer.cs
+  artifactKey: Guid(85d190a0c30339f4d8fa2e3718d009e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/MovePlayer.cs using Guid(85d190a0c30339f4d8fa2e3718d009e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4fdad26ffc1741b5cc5e6a600be6cba4') in 0.015914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_114.asset
+  artifactKey: Guid(c8c89445ad75fbe40b9d338414e089d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_114.asset using Guid(c8c89445ad75fbe40b9d338414e089d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a4f9f5c0cb09cd42b8827188951ab784') in 0.082388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_106.asset
+  artifactKey: Guid(c8ee47a45384c0b48939f3a362c29cc0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_106.asset using Guid(c8ee47a45384c0b48939f3a362c29cc0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3455525d941bd310e8ee691645bd44c5') in 0.033849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_55.asset
+  artifactKey: Guid(4b2d46f6632b67149a8d7b2c1bec5fa8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_55.asset using Guid(4b2d46f6632b67149a8d7b2c1bec5fa8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a8c9d47685f23f86027f2a3dd80ae68f') in 0.018778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Animations/Player/PlayerRun.anim
+  artifactKey: Guid(d1c6996203275e64084f962f5c1b6573) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/Player/PlayerRun.anim using Guid(d1c6996203275e64084f962f5c1b6573) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '85b1cb20c8d22e79cb0aaa55346eaecd') in 0.048959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_15.asset
+  artifactKey: Guid(be54615c960b9574a82029a56e46af3a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_15.asset using Guid(be54615c960b9574a82029a56e46af3a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cf3365148beac2c22a922754f7254d13') in 0.048400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_74.asset
+  artifactKey: Guid(365d475e0176fda4ba1d334ae13beb6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_74.asset using Guid(365d475e0176fda4ba1d334ae13beb6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7c33a0195eaf76c5834a42f8b10aa8c3') in 0.057813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_7.asset
+  artifactKey: Guid(b7c8b499cf4d2314cb77555a406aa599) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_7.asset using Guid(b7c8b499cf4d2314cb77555a406aa599) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '201af81c013b6787ad74b091f3f10c71') in 0.020694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_68.asset
+  artifactKey: Guid(633975de197aa2c47b301c153d09aed2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_68.asset using Guid(633975de197aa2c47b301c153d09aed2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f2dd7ab11c25b088dfaf0718a51919ab') in 0.019972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_75.asset
+  artifactKey: Guid(af405fbc55e2f3f41a419be02093d5dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_75.asset using Guid(af405fbc55e2f3f41a419be02093d5dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd6007c41a66d81b2711b11f89b2fa307') in 0.019634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_8.asset
+  artifactKey: Guid(2cace8194b0542a4abba43cf325082e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_8.asset using Guid(2cace8194b0542a4abba43cf325082e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '00db77cf098fdfc88c7ae054c97330d4') in 0.020198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_70.asset
+  artifactKey: Guid(4d751bafb9e09ca4db53289a85837041) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_70.asset using Guid(4d751bafb9e09ca4db53289a85837041) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2b556011d7f82f4b221e086f7a5a6ffa') in 0.018727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_83.asset
+  artifactKey: Guid(88af79bbdca72dc42be7fa78fab52838) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_83.asset using Guid(88af79bbdca72dc42be7fa78fab52838) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7377643632dde0f1f690bfba32f1f4d0') in 0.018471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_118.asset
+  artifactKey: Guid(cdf528ae157761f4baaf55003a865fac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_118.asset using Guid(cdf528ae157761f4baaf55003a865fac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ca8daef40a11ac1939bf8ae0818f659e') in 0.038278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_64.asset
+  artifactKey: Guid(541b6db380215f24eb139ac4c42a376b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_64.asset using Guid(541b6db380215f24eb139ac4c42a376b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81b869e9f0bde543f3213f2100a11d44') in 0.019490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_148.asset
+  artifactKey: Guid(151b38c8b13d4c543b23420bc2939005) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_148.asset using Guid(151b38c8b13d4c543b23420bc2939005) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13cd484cb2720f060da5a3ab0fdcb119') in 0.022940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_112.asset
+  artifactKey: Guid(9c298242678d67247a331b96e446cb5b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_112.asset using Guid(9c298242678d67247a331b96e446cb5b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7939bdb144b2b8cf207e026ea196bbd') in 0.079814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_1.asset
+  artifactKey: Guid(8f7c3d2296032c94a8df6546286a936b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_1.asset using Guid(8f7c3d2296032c94a8df6546286a936b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b4887b202caab760af2b3570e3eb3bc1') in 0.059629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_15.asset
+  artifactKey: Guid(82f865b46b0742f458501fa9a680df75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_15.asset using Guid(82f865b46b0742f458501fa9a680df75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'afdaeaa7d4b6433d3475db8fe128882e') in 0.046584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_86.asset
+  artifactKey: Guid(6fee0b612e1f33e49a7b9d14c358e106) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_86.asset using Guid(6fee0b612e1f33e49a7b9d14c358e106) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5613ff0bb2793e17d293b93cd78bd72a') in 0.019851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_13.asset
+  artifactKey: Guid(daa61cc0ee99dac43b984a0e5dc5426c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_13.asset using Guid(daa61cc0ee99dac43b984a0e5dc5426c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '94e40f7dc57ad4b2a688ec5004bcbfc8') in 0.055794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_89.asset
+  artifactKey: Guid(fbd4885767cfc4649abb482aff183bee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_89.asset using Guid(fbd4885767cfc4649abb482aff183bee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2fee9c70cc9a16e7d764a42c858fb52e') in 0.069160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete2.prefab
+  artifactKey: Guid(cee0dffd17537ca41bc818331d7b2b76) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete2.prefab using Guid(cee0dffd17537ca41bc818331d7b2b76) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '907df49ff0fd7a501f39313d0cb5a43e') in 0.066814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_18.asset
+  artifactKey: Guid(0761d7123d371f148b3f798888cd7241) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_18.asset using Guid(0761d7123d371f148b3f798888cd7241) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1a1105f14edcd0cf19ee3c479eac5859') in 0.042983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_134.asset
+  artifactKey: Guid(83fa0ad88d888de45b93c22ae9c4679c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_134.asset using Guid(83fa0ad88d888de45b93c22ae9c4679c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bb59c4f249b490286b2034fca6667460') in 0.094949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_24.asset
+  artifactKey: Guid(46fbac37dcf3c8c47a03b6294e4c4e6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_24.asset using Guid(46fbac37dcf3c8c47a03b6294e4c4e6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef7d600869458ded84a3976fdd9f92d0') in 0.013263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_30.asset
+  artifactKey: Guid(02b0227666d83ab48b76274a7fe91d36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_30.asset using Guid(02b0227666d83ab48b76274a7fe91d36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc862aefd2f5037cf336b963b990b96e') in 0.088858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_31.asset
+  artifactKey: Guid(186fb189f45a1734ebf6421d2e791c9b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_31.asset using Guid(186fb189f45a1734ebf6421d2e791c9b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '27db178878a2d5db24572ec597090634') in 0.020241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_40.asset
+  artifactKey: Guid(cebe8c6f481202045a93044401e59c39) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_40.asset using Guid(cebe8c6f481202045a93044401e59c39) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1fd2339059f67610cba7bedd7010b37e') in 0.036380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_27.asset
+  artifactKey: Guid(ce0f384b723a9534db64cbda8d3644e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_27.asset using Guid(ce0f384b723a9534db64cbda8d3644e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8066731fe6cf94abbb2eaaf987a1810a') in 0.031513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_39.asset
+  artifactKey: Guid(0dabfc53457c090459de8ef37610f88b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_39.asset using Guid(0dabfc53457c090459de8ef37610f88b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '608f39498ea1753d653511614fedb501') in 0.033845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_29.asset
+  artifactKey: Guid(b59a70163f92d8c4d8e4eefd2bc5e33b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_29.asset using Guid(b59a70163f92d8c4d8e4eefd2bc5e33b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a78adaeffaaad5d89ea67c9a2dc495fe') in 0.019703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_37.asset
+  artifactKey: Guid(5f108b2a0e42d444abc3f088e5d15c73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_37.asset using Guid(5f108b2a0e42d444abc3f088e5d15c73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f59f7c0c1007519c3f6136619b35c31') in 0.032329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_26.asset
+  artifactKey: Guid(92fc492df6118a7459cc556a95af11e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_26.asset using Guid(92fc492df6118a7459cc556a95af11e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b040051115f24cc6b98bd37b76c9405') in 0.085703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_63.asset
+  artifactKey: Guid(e116d2e44b2ce754db5b2f6ac21aa45d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_63.asset using Guid(e116d2e44b2ce754db5b2f6ac21aa45d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'acd9b9b727ce38d1fd3dd8a2577460cb') in 0.035831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_61.asset
+  artifactKey: Guid(7c4c605438c823a43a7bf765a092cb60) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_61.asset using Guid(7c4c605438c823a43a7bf765a092cb60) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5ec76f33b71d0f58b44b363b90dd0f36') in 0.035876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_48.asset
+  artifactKey: Guid(9644c259310b8244a8485381566a57f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_48.asset using Guid(9644c259310b8244a8485381566a57f9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '744b7a47fa0a82542d3f96ce89d14e7b') in 0.018956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_45.asset
+  artifactKey: Guid(a4c48ccf74279c24fae66ae1e7742237) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_45.asset using Guid(a4c48ccf74279c24fae66ae1e7742237) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0051984cdc07c07863376c7eec519177') in 0.019664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_47.asset
+  artifactKey: Guid(d98a9afc7a0aa09499ef5e13f7eb0d48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_47.asset using Guid(d98a9afc7a0aa09499ef5e13f7eb0d48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '75cc01e9df85b5a3b0cb4ed5dace0684') in 0.021229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_58.asset
+  artifactKey: Guid(f3a917db00b6da14ab9c85b374e5b09d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_58.asset using Guid(f3a917db00b6da14ab9c85b374e5b09d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '53cb6382289347d0442254b6b19ba876') in 0.019836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_55.asset
+  artifactKey: Guid(8d9711dab23cb3048b1c2c3971d09a8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_55.asset using Guid(8d9711dab23cb3048b1c2c3971d09a8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b58d64f96ec5407ea866021b05b6d407') in 0.021141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_56.asset
+  artifactKey: Guid(80956075e17181340804c178ff6734a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_56.asset using Guid(80956075e17181340804c178ff6734a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf0edb5a0011b12500cf24f4b7ce0f23') in 0.026672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_87.asset
+  artifactKey: Guid(e75be039ea5f9ff4b89f652c9caf39c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_87.asset using Guid(e75be039ea5f9ff4b89f652c9caf39c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a54d272d998e9d9289546b351647a371') in 0.037125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_128.asset
+  artifactKey: Guid(dd05d7f5c6af31a4ca14b2ba2247e553) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_128.asset using Guid(dd05d7f5c6af31a4ca14b2ba2247e553) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd43b5decf2dbd8edf5a3ab9fdc73e44b') in 0.055405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/oak_woods_tileset.png
+  artifactKey: Guid(bbf3ffbaa9b60bd4a8e2155752bda7ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/oak_woods_tileset.png using Guid(bbf3ffbaa9b60bd4a8e2155752bda7ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0999a6f0729948591d70d993608f21f5') in 0.410061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 153
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/decorations/fence_1.png
+  artifactKey: Guid(9779f2f534f2b1a4a95a4abb5a1e2fa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/decorations/fence_1.png using Guid(9779f2f534f2b1a4a95a4abb5a1e2fa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b1d4104753deefaac70560d890874e96') in 0.107444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_6.asset
+  artifactKey: Guid(ff4568d1aa6d7104d90ca39559c28ade) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_6.asset using Guid(ff4568d1aa6d7104d90ca39559c28ade) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c86fae2f9178723ab646779711ce23f5') in 0.026008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_1.asset
+  artifactKey: Guid(9a12cea602caa224083d39bcba293af8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_1.asset using Guid(9a12cea602caa224083d39bcba293af8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ad2a8b2743872c16108d983db72b1cb') in 0.019866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_116.asset
+  artifactKey: Guid(61adc2e8649ce284485d391400b549c1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_116.asset using Guid(61adc2e8649ce284485d391400b549c1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce0dedf21529c995305cbb845d27e9e5') in 0.043693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_95.asset
+  artifactKey: Guid(723d941333519e04d91bfa8ea93bd887) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_95.asset using Guid(723d941333519e04d91bfa8ea93bd887) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3ef612f53084accabd51021bde5b1317') in 0.031236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_42.asset
+  artifactKey: Guid(bafa6df5270709e449390a5710224957) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_42.asset using Guid(bafa6df5270709e449390a5710224957) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5bf6208aa1a458bd222d1947abf723ce') in 0.020902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_105.asset
+  artifactKey: Guid(b821479ecc70c4d458db522a48a9faca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_105.asset using Guid(b821479ecc70c4d458db522a48a9faca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '30905d99141d3b80498e40cefb34c54b') in 0.026229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_25.asset
+  artifactKey: Guid(b06f6868f31bd4545af9f0c87ebdd3e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_25.asset using Guid(b06f6868f31bd4545af9f0c87ebdd3e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '217910f4a7aac8107ea105e15453be09') in 0.012898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_25.asset
+  artifactKey: Guid(56669da804c83064db04b0b0c8dec3f1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_25.asset using Guid(56669da804c83064db04b0b0c8dec3f1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e5a5a10c710031f25586eae6a0919d0c') in 0.020584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_124.asset
+  artifactKey: Guid(4b9f2267d33b05343826280745cb74e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_124.asset using Guid(4b9f2267d33b05343826280745cb74e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d9f6fcf90d9721fbd9209b843623a10') in 0.045255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_36.asset
+  artifactKey: Guid(ede707e157c43f4418d1a7c992c10c83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_36.asset using Guid(ede707e157c43f4418d1a7c992c10c83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '826e14875c4ddeaef0068008ba513e74') in 0.037991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_19.asset
+  artifactKey: Guid(3128cee7a79958f4fa1f0d4d658adc5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TileMaps/TileSet/TileMap2/TilePalete/TileMap2-export_19.asset using Guid(3128cee7a79958f4fa1f0d4d658adc5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd96ea69a0e466b14b282b89fb8bbe879') in 0.035187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_99.asset
+  artifactKey: Guid(cf291f98675a42f40bcecabc033abf33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_99.asset using Guid(cf291f98675a42f40bcecabc033abf33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '208ea272080dd3a8f60a9c33ecf03815') in 0.047546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_150.asset
+  artifactKey: Guid(920291f786e39b44c825e430729ae74b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_150.asset using Guid(920291f786e39b44c825e430729ae74b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0854fc4c523ba39825f9b0aabb11afba') in 0.024958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_46.asset
+  artifactKey: Guid(5ca987b1e417e054c9f1aebe75ad6ac7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_46.asset using Guid(5ca987b1e417e054c9f1aebe75ad6ac7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2feaf0cf92578ddd525ff57a65a47dad') in 0.033143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_103.asset
+  artifactKey: Guid(170405a81e3c9c44992ed50bd1a00973) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_103.asset using Guid(170405a81e3c9c44992ed50bd1a00973) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5161a818721e97dbb98ba06f9a79744c') in 0.018368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_141.asset
+  artifactKey: Guid(6756ff278b8512549ae4ec47c1b880b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_141.asset using Guid(6756ff278b8512549ae4ec47c1b880b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '545892a22f33a7b9ba33d3d6643e3e42') in 0.028786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_92.asset
+  artifactKey: Guid(77cb235ae14dc5f4dbc226410f54d7ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_92.asset using Guid(77cb235ae14dc5f4dbc226410f54d7ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e2ecd3de4712f5a419e33a20d03c6f6') in 0.050080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_30.asset
+  artifactKey: Guid(52ac08d647a034746829346e2fe6a0cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_30.asset using Guid(52ac08d647a034746829346e2fe6a0cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b32d28a456ac01c6ae7d0b0703f567d6') in 0.027283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_21.asset
+  artifactKey: Guid(63722931b8386d341a3263fe361a556d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_21.asset using Guid(63722931b8386d341a3263fe361a556d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7daace3928a0346b824c5c3a7167095a') in 0.079245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_97.asset
+  artifactKey: Guid(7346b661a46a4d84abc474a348bbf279) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BackGrounds/oak_woods_v1.0/tile_odinha/oak_woods_tileset_97.asset using Guid(7346b661a46a4d84abc474a348bbf279) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f98349ea8b0a85bc27e7b238d1eecd48') in 0.063432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.78 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (0.8 MB). Loaded Objects now: 6832.
+Memory consumption went from 192.5 MB to 191.6 MB.
+Total: 5.131600 ms (FindLiveObjects: 0.483900 ms CreateObjectMapping: 0.436000 ms MarkObjects: 3.785000 ms  DeleteObjects: 0.425900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\Git_Study\TCCMuitoFofo\Business Plan Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\Git_Study\TCCMuitoFofo\Business Plan Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.820 seconds
+Refreshing native plugins compatible for Editor in 6.86 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.473 seconds
+Domain Reload Profiling: 2289ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (551ms)
+		LoadAssemblies (326ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (291ms)
+			TypeCache.Refresh (278ms)
+				TypeCache.ScanAssembly (262ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1474ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (579ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (315ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 7.73 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6187 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (0.9 MB). Loaded Objects now: 6850.
+Memory consumption went from 288.0 MB to 287.2 MB.
+Total: 8.380000 ms (FindLiveObjects: 1.046200 ms CreateObjectMapping: 0.837100 ms MarkObjects: 5.578700 ms  DeleteObjects: 0.916600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 73.237330 seconds.
+  path: Assets/Sprite
+  artifactKey: Guid(f6bfed708fbab064da06378cd47d9fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite using Guid(f6bfed708fbab064da06378cd47d9fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c0851636bbf97be620f9b528c63fbc') in 0.001947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.728006 seconds.
+  path: Assets/Sprite/coisa.png
+  artifactKey: Guid(3894d8136bd93f44688d95e46e3ac15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/coisa.png using Guid(3894d8136bd93f44688d95e46e3ac15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ff99b3c3e533045e02f01296f75a1d') in 0.002531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22.133896 seconds.
+  path: Assets/URP
+  artifactKey: Guid(54e437d216134dc42b691c4528b14fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP using Guid(54e437d216134dc42b691c4528b14fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2233f45a906cf4c4bc9ee0470a6aab') in 0.000553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.052246 seconds.
+  path: Assets/URP/2D_Render.asset
+  artifactKey: Guid(c8dc9920eaab9fb4bbba768ab4b07d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/2D_Render.asset using Guid(c8dc9920eaab9fb4bbba768ab4b07d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83317043dd61ccc71083e4aacc5b1633') in 0.001097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/URP/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(169de35edc23ca14cb3f794619f86ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/UniversalRenderPipelineGlobalSettings.asset using Guid(169de35edc23ca14cb3f794619f86ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5652ba746a44d6001ac209558a3603e3') in 0.001904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.506815 seconds.
+  path: Assets/Shader
+  artifactKey: Guid(9e7cfe182523a494493763484d0377cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader using Guid(9e7cfe182523a494493763484d0377cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69795b2bc401282eab60d069b622274') in 0.001110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.092373 seconds.
+  path: Assets/Shader/2DGlowMaterial.mat
+  artifactKey: Guid(f62739dfd48dd0c4e97a324cb80fecf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/2DGlowMaterial.mat using Guid(f62739dfd48dd0c4e97a324cb80fecf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30985da95dac85f1f8a4a0575a34d0d') in 0.001254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.202441 seconds.
+  path: Assets/Shader/2dGlow.shadergraph
+  artifactKey: Guid(20d0794117090d848bae8e8f24c502f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/2dGlow.shadergraph using Guid(20d0794117090d848bae8e8f24c502f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89b4eec6d912c7e2f6b3d84f95fe36e') in 0.001151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 40.065108 seconds.
+  path: Assets/Shader/meupau.mat
+  artifactKey: Guid(d529bccfb3f552e489c0e047a7e9a277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/meupau.mat using Guid(d529bccfb3f552e489c0e047a7e9a277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50384838a69a6386891e35522877a90b') in 0.001370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 39.503958 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD.png
+  artifactKey: Guid(affd7e74f3f7b465ea861fbf1651b73b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD.png using Guid(affd7e74f3f7b465ea861fbf1651b73b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b750c75fd95c2cb2c1a2316ecb88781a') in 0.001510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002573 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On.png
+  artifactKey: Guid(40ca859210cd04b62bbfe0e0d5696d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On.png using Guid(40ca859210cd04b62bbfe0e0d5696d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f525007d8d7792bf1e7c03871f8839') in 0.001236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.022262 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@32.png
+  artifactKey: Guid(a9354548f1d8e4015830a88081482039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@32.png using Guid(a9354548f1d8e4015830a88081482039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ab53b6fe7bbefa767cd930552bb7ca') in 0.001365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.021520 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@64.png
+  artifactKey: Guid(cc7e65fd16d39483aa18d865a68e9451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@64.png using Guid(cc7e65fd16d39483aa18d865a68e9451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e907ecea7340a0eaed49bc6878e5357') in 0.001392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.011037 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@128.png
+  artifactKey: Guid(50d3cd2f336704fcf9cf5b293c10ba9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@128.png using Guid(50d3cd2f336704fcf9cf5b293c10ba9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75283bcad49041a4bc341985d9f45707') in 0.001273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.028202 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@256.png
+  artifactKey: Guid(ba345f2f643d842459447c374943401d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD On@256.png using Guid(ba345f2f643d842459447c374943401d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ac446be8db5c899d54dec23baae95e') in 0.001438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.016857 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@32.png
+  artifactKey: Guid(99e2d423491be485bafdee152310057a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@32.png using Guid(99e2d423491be485bafdee152310057a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58e14a86be3afa78ed6b65787a63896b') in 0.001256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.024917 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@64.png
+  artifactKey: Guid(84b96a9d1862c4a59afc0fff9875bfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@64.png using Guid(84b96a9d1862c4a59afc0fff9875bfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83df32bcbea0c650eae2f46a1e15fe7f') in 0.001306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.026108 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@128.png
+  artifactKey: Guid(5156a72be078d4d0e8593843cdc34294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@128.png using Guid(5156a72be078d4d0e8593843cdc34294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30f1d1338ca78348d45a7c947cc2943') in 0.001238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003519 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@256.png
+  artifactKey: Guid(1214a7ec362a4479ba225757639c24f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKCCD@256.png using Guid(1214a7ec362a4479ba225757639c24f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ca002e38296d519eea479716d8f89a') in 0.001249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.021143 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik.png
+  artifactKey: Guid(53d33bff0a9374b6db003552e5767cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik.png using Guid(53d33bff0a9374b6db003552e5767cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7873807a16602523e895ee2e627d5a1') in 0.001335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.017390 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik On.png
+  artifactKey: Guid(9efb82d91ad0e4fdfbf6a09635f9d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik On.png using Guid(9efb82d91ad0e4fdfbf6a09635f9d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef9f6a93073dca2129deabe4341c593') in 0.082045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.035221 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik On@128.png
+  artifactKey: Guid(950832395ec754ba48ab1cffa214cec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik On@128.png using Guid(950832395ec754ba48ab1cffa214cec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f679592368b2b83ac2061b84cf1797d') in 0.001308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000816 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik On@256.png
+  artifactKey: Guid(b533c652136df4744a089524507a44c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik On@256.png using Guid(b533c652136df4744a089524507a44c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3710ad5fd6f05bca4263a8cdc7de367a') in 0.001141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.010322 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik@32.png
+  artifactKey: Guid(d1c2be2a893c441fca30fe5d470e0d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKFabrik@32.png using Guid(d1c2be2a893c441fca30fe5d470e0d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11facd921d6a6475b4b228dcda24e04') in 0.141586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@32.png
+  artifactKey: Guid(9382c856352ae4001b0ec605e74a61de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@32.png using Guid(9382c856352ae4001b0ec605e74a61de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f29dd896c154acde630211f5ca8f68') in 0.001217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.024435 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@64.png
+  artifactKey: Guid(b88a78d35a73e4a33bf6788d22e3cb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@64.png using Guid(b88a78d35a73e4a33bf6788d22e3cb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7a36a1281bf3d3a4a3e9d8b384ae3d') in 0.001326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.011842 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@128.png
+  artifactKey: Guid(a7509656986904778b9b80babc278b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@128.png using Guid(a7509656986904778b9b80babc278b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef67145c8d771d73de695460552588c') in 0.001283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.026948 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@256.png
+  artifactKey: Guid(190c43ac8c7af48e2ae7663a44f1c7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb On@256.png using Guid(190c43ac8c7af48e2ae7663a44f1c7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7411230a8ebd88b4a0a283a0dc934e1b') in 0.001384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.030387 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb@32.png
+  artifactKey: Guid(4567ce7a1cf16433196f2688091df4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb@32.png using Guid(4567ce7a1cf16433196f2688091df4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63165e4c9bbe440034523a43178ba4ee') in 0.056533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.030052 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb@128.png
+  artifactKey: Guid(8f03a52015a57491094416b25e8e9c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb@128.png using Guid(8f03a52015a57491094416b25e8e9c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4131596af52da9d29407cc71c8178316') in 0.012174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.016163 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb@256.png
+  artifactKey: Guid(4a3eebea80ac54fd3818f6a36c36168d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKLimb@256.png using Guid(4a3eebea80ac54fd3818f6a36c36168d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05cd21791c4ec90e0de115bdac99da6') in 0.001517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007418 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKManager On.png
+  artifactKey: Guid(53c84f3dfe8b04b6db1fb80443fafbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKManager On.png using Guid(53c84f3dfe8b04b6db1fb80443fafbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e85b2b0f7570b49fe001ad0c0831905') in 0.023407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.033328 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKManager On@32.png
+  artifactKey: Guid(48e86ca3e41834f60b0eae5fb521cfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKManager On@32.png using Guid(48e86ca3e41834f60b0eae5fb521cfc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96f3cde6ce5f10e255d1a6ba5cc4a4b') in 0.103999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKManager On@128.png
+  artifactKey: Guid(5c81e841f99f744f997dfa12ce9c2a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.IKManager On@128.png using Guid(5c81e841f99f744f997dfa12ce9c2a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d437e2dd3f68237e9637f308fd07ca') in 0.001636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.736486 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary.png
+  artifactKey: Guid(3024cb66f112f47f599953fe508d632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary.png using Guid(3024cb66f112f47f599953fe508d632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a86c826f40eb432f815712394f23608') in 0.031846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.030995 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On.png
+  artifactKey: Guid(a86c61e5bed184ddc884003f0c947bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On.png using Guid(a86c61e5bed184ddc884003f0c947bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a558f3575612031707ea11b9cceca3') in 0.001344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007555 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@32.png
+  artifactKey: Guid(fad537f7b1df74e869915bbab4356a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@32.png using Guid(fad537f7b1df74e869915bbab4356a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74e3e0976ce7ab03e6ee2c049506bd1') in 0.001357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.022783 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@64.png
+  artifactKey: Guid(19370790a791d4fc99ee3830251366f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@64.png using Guid(19370790a791d4fc99ee3830251366f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c89976b222cb2887432070a112dda7') in 0.001339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.018861 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@128.png
+  artifactKey: Guid(46e8f61d13f8b49c7b2ac6beb5788f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@128.png using Guid(46e8f61d13f8b49c7b2ac6beb5788f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a82c7df0908ccefd052e6545106e75d') in 0.001295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004928 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@256.png
+  artifactKey: Guid(b2d98f54996544507ade581c727c1c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary On@256.png using Guid(b2d98f54996544507ade581c727c1c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9777f81e7bcde43ffde78cd866dacb58') in 0.001441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007772 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary@32.png
+  artifactKey: Guid(5c6d7a5595d5b4713980d6a92eb6fced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary@32.png using Guid(5c6d7a5595d5b4713980d6a92eb6fced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47623ec956d273ad72d61e278844bcd8') in 0.093739 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary@128.png
+  artifactKey: Guid(efb08993e46994800a736d1f88e89019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary@128.png using Guid(efb08993e46994800a736d1f88e89019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8271477180e6d19cd5809491b9c3603') in 0.001471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary@256.png
+  artifactKey: Guid(b6c49e41a57e648e9a16f44ce4b8d9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibrary@256.png using Guid(b6c49e41a57e648e9a16f44ce4b8d9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc9263d0824044b7d05f0e05a8bba8d') in 0.001140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.025866 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryManager On.png
+  artifactKey: Guid(aea51f1a175ef466e95835d2787d061f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryManager On.png using Guid(aea51f1a175ef466e95835d2787d061f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '686780b08f520fd5a9be448fa859edcf') in 0.508234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryManager@32.png
+  artifactKey: Guid(3b9a6aa9cd66c475ea8cba88e186779f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryManager@32.png using Guid(3b9a6aa9cd66c475ea8cba88e186779f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435386ccaee852c19fae87cbefbc9da5') in 0.046770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar On@128.png
+  artifactKey: Guid(e2c573f07f6d7471d9cad8cb2a5fece0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar On@128.png using Guid(e2c573f07f6d7471d9cad8cb2a5fece0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0bc957ad0a1923f4508322550b088c') in 0.159515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar@256.png
+  artifactKey: Guid(af04f3196abef440b94c03fbe3dab00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar@256.png using Guid(af04f3196abef440b94c03fbe3dab00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbcf3914f370ef843c8cd37b1f360cb') in 0.004256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar@64.png
+  artifactKey: Guid(33cf904ffefc842ddb5ccf1565cd94b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar@64.png using Guid(33cf904ffefc842ddb5ccf1565cd94b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3605348af17f31b26f7142eb6f655365') in 0.001435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar@128.png
+  artifactKey: Guid(5c718c499137a4dc48bbf03037c806f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar@128.png using Guid(5c718c499137a4dc48bbf03037c806f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf721bd70d1ca19bbf782bcafbd52725') in 0.001393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar On@256.png
+  artifactKey: Guid(2af1a7323d104499d992be9a2d8dc933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar On@256.png using Guid(2af1a7323d104499d992be9a2d8dc933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffb9e7eb32913df5804a9ccb7e61841') in 0.001396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryManager On@256.png
+  artifactKey: Guid(093d252d1d41041c8b4df35c330dcc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryManager On@256.png using Guid(093d252d1d41041c8b4df35c330dcc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2def27f81f37f26e232d56ff95e479') in 0.001358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar.png
+  artifactKey: Guid(0490d28a1206e4c4cb4954be7b678980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteLibraryVar.png using Guid(0490d28a1206e4c4cb4954be7b678980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9709ac470bcb6e0e1eb450706fe2a0') in 0.001494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteResolver On@256.png
+  artifactKey: Guid(fa557b89ecf3d44f2b6cae783ce09806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteResolver On@256.png using Guid(fa557b89ecf3d44f2b6cae783ce09806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f45ae6b262f3e25ab8aa647377a14b') in 0.001963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteResolver On@32.png
+  artifactKey: Guid(6e2a81314a40c43849866fb7490cb521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteResolver On@32.png using Guid(6e2a81314a40c43849866fb7490cb521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0444f22b85b05d2ee55297e98b6337') in 0.001434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteResolver On.png
+  artifactKey: Guid(db2b3974aac164565bda03b3e0d93046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/ComponentIcons/Animation.SpriteResolver On.png using Guid(db2b3974aac164565bda03b3e0d93046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a10fd973d812c74dc60aa28d0c0437') in 0.002054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
