@@ -10,8 +10,8 @@ public class Animation : MonoBehaviour
     MovePlayer _player; //Cria uma variavel da classe MovePlayer
 
     string currentState; //Cria uma variavel do tipo de texto responsavel pelo controle de estados do personagem
-    const string _idle = "PlayerIdle"; //variavel constante do tipo texto que define a animação do player ficar parado
-    const string _walk = "PlayerRun"; //variavel constante do tipo texto que define a animação do player andar
+    const string _idle = "Idle"; //variavel constante do tipo texto que define a animação do player ficar parado
+    const string _walk = "Walk"; //variavel constante do tipo texto que define a animação do player andar
     const string _attack = "PlayerAttack";
 
     void Start()
