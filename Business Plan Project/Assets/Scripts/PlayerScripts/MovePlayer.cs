@@ -11,7 +11,7 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] float jumpForce; //Variavel flutuante responsavel em definir a velocidade de pulo do player
     [SerializeField] Transform GroundCollider;
     [SerializeField] LayerMask GroundLayer;
-    public float xAxis { get; set; } //Variavel flutuante responsavel em definir a direção do player
+    public float xAxis { get; set; } //Variavel flutuante responsavel em definir a direï¿½ï¿½o do player
     public bool isAttacking;
     [SerializeField] bool onAttack;
     public int side { get; set; }
@@ -33,7 +33,7 @@ public class MovePlayer : MonoBehaviour
         Attack();
         PlayerJump(); //Metodo responsavel em fazer o sistema de pulo
         PlayerMove(); //Metodo responsavel por mover o player
-        FlipPlayer(); //Metodo responsavel por virar o player de acordo com a direção do mesmo
+        FlipPlayer(); //Metodo responsavel por virar o player de acordo com a direï¿½ï¿½o do mesmo
     }
     void Attack()
     {
@@ -46,19 +46,19 @@ public class MovePlayer : MonoBehaviour
     private void PlayerMove()
     {
         if (isAttacking) return;
-        xAxis = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speedPlayer; //define a direção e a velociade do jogador
+        xAxis = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speedPlayer; //define a direï¿½ï¿½o e a velociade do jogador
 
         Rb2D.velocity = new Vector2(xAxis * speedPlayer, Rb2D.velocity.y); //Move o player
     }
-    bool IsGround() //Metodo boleano responsavel em retornar verdadeiro se o player estiver no chão e falso se ele estiver no ar
+    bool IsGround() //Metodo boleano responsavel em retornar verdadeiro se o player estiver no chï¿½o e falso se ele estiver no ar
     {
         return Physics2D.OverlapCircle(GroundCollider.position, 0.1f, GroundLayer);
     }
     private void PlayerJump()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && IsGround()) //Condição caso o jogador aperte o espaço e se o player estiver no chão
+        if(Input.GetKeyDown(KeyCode.Space) && IsGround()) //Condiï¿½ï¿½o caso o jogador aperte o espaï¿½o e se o player estiver no chï¿½o
         {
-            Rb2D.velocity = new Vector2(Rb2D.velocity.x, jumpForce); //Define uma velocidade vertical para dar a sensação de pulo
+            Rb2D.velocity = new Vector2(Rb2D.velocity.x, jumpForce); //Define uma velocidade vertical para dar a sensaï¿½ï¿½o de pulo
         }
     }
 
@@ -80,8 +80,8 @@ public class MovePlayer : MonoBehaviour
         fthrs[currentAttackIndex].AttackFeather();
         yield return new WaitForSeconds(attackTime);
         fthrs[currentAttackIndex].onAttackFeather = false;
-        fthrs[currentFeatherIndex].ToggleTrainRender(false);
         yield return new WaitForSeconds(cooldownAttack);
+        fthrs[currentFeatherIndex].ToggleTrainRender(false);
         onAttack = false;
         currentFeatherIndex++;
         if(currentFeatherIndex >= fthrs.Length)

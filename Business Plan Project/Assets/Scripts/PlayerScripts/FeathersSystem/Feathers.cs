@@ -69,7 +69,7 @@ public class Feathers : MonoBehaviour
     {
         if (player == null || onAttackFeather)
         {
-            return; // Verifica se há um jogador definido
+            return; // Verifica se hï¿½ um jogador definido
         }
         float moveY = Mathf.Sin(Time.time * frequency) * amplitude;
         float moveX = Mathf.Cos(Time.timeSinceLevelLoad) * amplitude * 0;
@@ -79,7 +79,7 @@ public class Feathers : MonoBehaviour
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         float offsetY = spacingY;
-        float offsetX = spacingX * player.localScale.x; // index é o índice do objeto
+        float offsetX = spacingX * player.localScale.x; // index ï¿½ o ï¿½ndice do objeto
         Vector3 targetPosition = player.position + new Vector3(moveX + offsetX, moveY + offsetY, 0f);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
@@ -90,7 +90,7 @@ public class Feathers : MonoBehaviour
     {
         float angle = player.localScale.x <= 0f ? 180f : 0f;
         Quaternion point = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, point , 10 * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, point , 25 * Time.deltaTime);
 
         Vector3 targetPosition = player.position + new Vector3(offSetAttackX * player.localScale.x, 0f, 0f);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: teste
+  m_Name: Train
   m_Shader: {fileID: -6465566751694194690, guid: 8a3389936791827419fdf6ce842b9b09, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,7 +37,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 37d65a1d58cc1274899ed1b5e931f3cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 914d8be37ee154148b0391a2318bbcb0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -54,12 +54,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DissolveScale: 0
+    - _DissolveScale: 100
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Color1: {r: 0, g: 16, b: 11.419608, a: 1}
-    - _Color2: {r: 0, g: 0.5, b: 0.40909088, a: 1}
-    - _DissolveSpeed: {r: 0, g: 0, b: 0, a: 0}
-    - _MainTexSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Color1: {r: 1.3316708, g: 0.37935188, b: 5.4339623, a: 1}
+    - _Color2: {r: 0.040753722, g: 0.040753722, b: 0.040753722, a: 1}
+    - _DissolveSpeed: {r: -0.1, g: 0, b: 0, a: 0}
+    - _MainTexSpeed: {r: -0.1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
