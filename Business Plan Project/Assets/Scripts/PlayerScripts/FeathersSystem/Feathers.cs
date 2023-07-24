@@ -1,42 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEngine.UIElements;
 
 public class Feathers : MonoBehaviour
 {
-    [SerializeField] Transform featherPivot;
     [SerializeField] Transform player;
 
+    [Header ("Sine variables")]
     [SerializeField] float frequency;
     [SerializeField] float amplitude;
 
+    [Header ("Move and Rotate variables")]
+    [SerializeField] bool flip;
+    
     [SerializeField] float smoothness;
-
     [SerializeField]float rotationSpeed;
 
-    [SerializeField] bool flip;
     Vector3 currentVelocity;
-
-    [SerializeField] int index;
 
     [SerializeField] float spacingX;
     [SerializeField] float spacingY;
 
+    [SerializeField] float speed;
+    public bool onAttackFeather;
+    [SerializeField] float offSetAttackX;
+
+    [SerializeField] TrailRenderer trainRenderer;
+
     private void Start()
     {
-        // Definir o valor de index para cada objeto
-        Feathers[] featherScripts = FindObjectsOfType<Feathers>();
-        for (int i = 0; i < featherScripts.Length; i++)
+        trainRenderer = GetComponentInChildren<TrailRenderer>();
+        GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerGameObject == null)
         {
-            featherScripts[i].index = i;
+            Debug.LogWarning("Player is not on scene");
+            return;
         }
+        player = playerGameObject.GetComponent<Transform>();
     }
 
     private void Update()
     {
         Flip();
-        MoveFeathers();
+        if(onAttackFeather)
+        {
+            AttackFeather();
+            return;
+        }
+        MoveFeather();
     }
 
     private void Flip()
@@ -44,36 +54,54 @@ public class Feathers : MonoBehaviour
         Vector3 scale = transform.localScale;
         if (player.position.x > transform.position.x)
         {
-            scale.x = Mathf.Abs(scale.x) * 1 * (flip ? -1 : 1);
+            scale.y = Mathf.Abs(scale.y) * -1 * (flip ? -1 : 1);
         }
         else
         {
-            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
+            scale.y = Mathf.Abs(scale.y) * (flip ? -1 : 1);
         }
         transform.localScale = scale;
 
     }
-    private void MoveFeathers()
+
+    
+    private void MoveFeather()
     {
-        if (player == null)
+        if (player == null || onAttackFeather)
         {
             return; // Verifica se há um jogador definido
         }
-
         float moveY = Mathf.Sin(Time.time * frequency) * amplitude;
-        float moveX = Mathf.Cos(Time.timeSinceLevelLoad) * amplitude;
-        //Vector3 targetPosition = featherPivot.position + new Vector3(moveX, moveY, 0f); // Posição alvo é a posição do jogador
+        float moveX = Mathf.Cos(Time.timeSinceLevelLoad) * amplitude * 0;
         
         Vector3 targetDirection = player.transform.position - transform.position;
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        float offsetY = index * spacingY; // index é o índice do objeto
-        float offsetX = index * spacingX * player.localScale.x; // index é o índice do objeto
-        Vector3 targetPosition = featherPivot.position + new Vector3(moveX + offsetX, moveY + offsetY, 0f);
+        float offsetY = spacingY;
+        float offsetX = spacingX * player.localScale.x; // index é o índice do objeto
+        Vector3 targetPosition = player.position + new Vector3(moveX + offsetX, moveY + offsetY, 0f);
 
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition,ref currentVelocity, smoothness);
     }
+    public void AttackFeather()
+    {
+        float angle = player.localScale.x <= 0f ? 180f : 0f;
+        Quaternion point = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, point , 10 * Time.deltaTime);
+
+        Vector3 targetPosition = player.position + new Vector3(offSetAttackX * player.localScale.x, 0f, 0f);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+    }
+    public void ToggleTrainRender(bool stateTrain)
+    {
+            trainRenderer.enabled = stateTrain;
+            if(!stateTrain)
+            {
+                trainRenderer.Clear();
+            }
+    }
+
 }

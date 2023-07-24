@@ -6,20 +6,19 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     Rigidbody2D Rb2D;
+    [SerializeField] Feathers[] fthrs;
     [SerializeField] float speedPlayer; //Variavel flutuante responsavel em definir a velocidade do player
     [SerializeField] float jumpForce; //Variavel flutuante responsavel em definir a velocidade de pulo do player
     [SerializeField] Transform GroundCollider;
     [SerializeField] LayerMask GroundLayer;
     public float xAxis { get; set; } //Variavel flutuante responsavel em definir a direção do player
-    public bool _isAttacking;
-    bool onAttack = true;
+    public bool isAttacking;
+    [SerializeField] bool onAttack;
     public int side { get; set; }
 
-    [SerializeField] float fireTime;
-    [SerializeField] float _cooldownAttack;
-    
-    [SerializeField] GameObject pfBulletPLayer;
-    [SerializeField] Transform spawnBulletPlayer;
+    [SerializeField] float attackTime;
+    [SerializeField] float cooldownAttack;
+    public int currentFeatherIndex = 0;
 
     void Start() //Executa apenas uma vez quando inicia o jogo
     {
@@ -27,6 +26,7 @@ public class MovePlayer : MonoBehaviour
         Application.targetFrameRate = 60; //Codigo que tem como objetivo travar o jogo em 60 quadros por segundo
         QualitySettings.vSyncCount = 0; //Codigo responsavel em desativar o vSync
         Rb2D = GetComponent<Rigidbody2D>(); //Codigo responsavel em pegar os componetes da classe "Rigidbody2D"
+        fthrs = FindObjectsOfType<Feathers>();
     }
     void Update() //Executa a todo momento
     {
@@ -37,14 +37,15 @@ public class MovePlayer : MonoBehaviour
     }
     void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.J) && onAttack)
+        if (Input.GetKeyDown(KeyCode.J) && !onAttack)
         {
             StartCoroutine(AttackTime());
         }
     }
+    
     private void PlayerMove()
     {
-        if (_isAttacking) return;
+        if (isAttacking) return;
         xAxis = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speedPlayer; //define a direção e a velociade do jogador
 
         Rb2D.velocity = new Vector2(xAxis * speedPlayer, Rb2D.velocity.y); //Move o player
@@ -72,12 +73,18 @@ public class MovePlayer : MonoBehaviour
 
     private IEnumerator AttackTime()
     {
-        onAttack = false;
-        _isAttacking = true;
-        GameObject _bullet = Instantiate(pfBulletPLayer, spawnBulletPlayer.position, spawnBulletPlayer.rotation);
-        yield return new WaitForSeconds(fireTime);
-        _isAttacking = false;
-        yield return new WaitForSeconds(_cooldownAttack);
         onAttack = true;
+        int currentAttackIndex = currentFeatherIndex;
+        fthrs[currentAttackIndex].onAttackFeather = true;
+        fthrs[currentFeatherIndex].ToggleTrainRender(true);
+        fthrs[currentAttackIndex].AttackFeather();
+        yield return new WaitForSeconds(attackTime);
+        fthrs[currentAttackIndex].onAttackFeather = false;
+        fthrs[currentFeatherIndex].ToggleTrainRender(false);
+        yield return new WaitForSeconds(cooldownAttack);
+        onAttack = false;
+        currentFeatherIndex++;
+        if(currentFeatherIndex >= fthrs.Length)
+            currentFeatherIndex = 0;
     }
 }

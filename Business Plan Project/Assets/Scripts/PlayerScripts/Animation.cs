@@ -29,7 +29,7 @@ public class Animation : MonoBehaviour
 
     void MoveAnimation()
     {
-        if (!_player._isAttacking)
+        if (!_player.isAttacking)
         {
             //Se o player estiver em movimento ele vai executar a animação de andar
             if (_player.xAxis != 0)
@@ -45,7 +45,7 @@ public class Animation : MonoBehaviour
     }
     void AttackAnimation()
     {   
-        if (_player._isAttacking)
+        if (_player.isAttacking)
         {
             AnimationState(_attack);
         }
