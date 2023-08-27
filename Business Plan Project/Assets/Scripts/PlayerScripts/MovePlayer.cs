@@ -6,7 +6,6 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     Rigidbody2D Rb2D;
-    [SerializeField] Feathers[] fthrs;
     [SerializeField] float speedPlayer; //Variavel flutuante responsavel em definir a velocidade do player
     [SerializeField] float jumpForce; //Variavel flutuante responsavel em definir a velocidade de pulo do player
     [SerializeField] Transform GroundCollider;
@@ -26,7 +25,7 @@ public class MovePlayer : MonoBehaviour
         Application.targetFrameRate = 60; //Codigo que tem como objetivo travar o jogo em 60 quadros por segundo
         QualitySettings.vSyncCount = 0; //Codigo responsavel em desativar o vSync
         Rb2D = GetComponent<Rigidbody2D>(); //Codigo responsavel em pegar os componetes da classe "Rigidbody2D"
-        fthrs = FindObjectsOfType<Feathers>();
+        //fthrs = FindObjectsOfType<Feather>();
     }
     void Update() //Executa a todo momento
     {
@@ -39,7 +38,7 @@ public class MovePlayer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.J) && !onAttack)
         {
-            StartCoroutine(AttackTime());
+            //StartCoroutine(AttackTime());
         }
     }
     
@@ -71,7 +70,7 @@ public class MovePlayer : MonoBehaviour
         side = xAxis > 0 ? 1 : side;
     }
 
-    private IEnumerator AttackTime()
+    /*private IEnumerator AttackTime()
     {
         onAttack = true;
         int currentAttackIndex = currentFeatherIndex;
@@ -86,5 +85,5 @@ public class MovePlayer : MonoBehaviour
         currentFeatherIndex++;
         if(currentFeatherIndex >= fthrs.Length)
             currentFeatherIndex = 0;
-    }
+    }*/
 }
