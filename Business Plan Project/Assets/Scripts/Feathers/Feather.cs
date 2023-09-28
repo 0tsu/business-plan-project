@@ -31,21 +31,19 @@ public class Feather : MonoBehaviour
     [SerializeField] float frequency = 0.4f;
     [SerializeField] float amplitude = 0.1f;
     
+    
+
     void Start()
     {
         GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
-        if (playerGameObject == null)
-        {
-            Debug.LogWarning("Player is not on scene");
-            return;
-        }
         player = playerGameObject.GetComponent<Transform>();
     }
     void Update(){
         MoveFeather();
         RotationFeather();
     }
-    public void MoveFeather(){ 
+
+    void MoveFeather(){ 
         float yOffset = Mathf.Sin(Time.time * speed * frequency) * amplitude;//responsavel de fazer um movimento usando o seno
         Vector3 targetPosition = player.position + new Vector3(spacingX * player.localScale.x, yOffset + spacingY, 0f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothness);//
@@ -57,4 +55,5 @@ public class Feather : MonoBehaviour
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);//Will rotate the feather along the Z axis
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);//will perform the rotation from freme to freme     
     }
+    
 }

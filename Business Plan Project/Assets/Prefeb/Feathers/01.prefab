@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3642093185864268571}
   - component: {fileID: 5462181094436948186}
   - component: {fileID: 2397099488705754541}
+  - component: {fileID: 2136926330344642830}
   m_Layer: 0
   m_Name: 01
   m_TagString: Untagged
@@ -97,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 5895360927816018950}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2bff1216f0b895f4eb0e14e6f55df614, type: 2}
+  m_Controller: {fileID: 9100000, guid: a4942eddb1d296d439b57eba37a295ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -163,3 +164,16 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000002418908, y: -0.020291273}
   m_Size: {x: 0.43000013, y: 0.14739753}
   m_Direction: 1
+--- !u!114 &2136926330344642830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895360927816018950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713b20235f186544da99c4b60baff8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onFAttack: 0

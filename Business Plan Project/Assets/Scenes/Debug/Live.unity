@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &9101780 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5739397355831577967, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
-  m_PrefabInstance: {fileID: 8493061795094604904}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &134963841
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,11 +174,6 @@ MonoBehaviour:
   - {fileID: 5895360927816018950, guid: eebf5ef6717739546a2397d90577afa1, type: 3}
   spacingX: -0.4
   spacingY: 0.15
---- !u!1 &491073693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4282868939630981425, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
-  m_PrefabInstance: {fileID: 8493061795094604904}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,29 +647,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6257766609479094270, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
   m_PrefabInstance: {fileID: 8493061795094604904}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1010639136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491073693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1b11644816ea0c47a04ca8d31671cad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedPlayer: 10
-  jumpForce: 5
-  GroundCollider: {fileID: 9101780}
-  GroundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  isAttacking: 0
-  onAttack: 1
-  attackTime: 0
-  cooldownAttack: 0
-  currentFeatherIndex: 0
 --- !u!1 &1206512051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,16 +1805,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514190380030910547, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563949076619351034, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
+      propertyPath: jumpForce
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4353897263217485588, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4282868939630981425, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1010639136}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
