@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 1
+  speedAttack: 1
   smoothness: 0.3
   spacingX: 0
   spacingY: 0
@@ -176,4 +177,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713b20235f186544da99c4b60baff8c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onFAttack: 0

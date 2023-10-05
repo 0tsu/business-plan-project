@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerControl : Character, IMove, IAttack
 {
     
-    [SerializeField] FeatherAnimation[] Fthr;
+    [SerializeField] Feather[] Fthr;
     [SerializeField] int indexFeather;
     [Header("Move variables")]
     public float xAxis;
@@ -30,13 +30,6 @@ public class PlayerControl : Character, IMove, IAttack
         PlayerJump();
         Move();
         Flip();
-    }
-    public void Attack()
-    {
-        if (Input.GetKeyDown(KeyCode.J) && !onPAttack)
-        {
-            StartCoroutine(AttackTime());
-        }
     }
     
     public void Move()
@@ -65,17 +58,24 @@ public class PlayerControl : Character, IMove, IAttack
         scaleX = xAxis > 0 ? 1 : scaleX;
         transform.localScale = new Vector3(scaleX, 1, 1);
     }
+    public void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.J) && !onAttack)
+        {
+            StartCoroutine(AttackTime());
+        }
+    }
 
     public IEnumerator AttackTime()
     {
-        onPAttack = true;
-        Fthr[indexFeather].onFAttack = true;
+        onAttack = true;
+        //Fthr[indexFeather].onFAttack = true;
         
         yield return new WaitForSeconds(attackTime);
-        Fthr[indexFeather].onFAttack = false;
+        //Fthr[indexFeather].onFAttack = false;
         
         yield return new WaitForSeconds(cooldownAttack);
-        onPAttack = false;
+        onAttack = false;
 
         indexFeather++;
         if (indexFeather >= Fthr.Length)

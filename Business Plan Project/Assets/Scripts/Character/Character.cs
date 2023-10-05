@@ -7,7 +7,7 @@ public abstract class Character : MonoBehaviour
     [SerializeField] protected float speed;
     
     [Header("Attack variables")]
-    [SerializeField] protected bool onPAttack;
+    [SerializeField] protected bool onAttack;
     public bool isAttacking { get; set; }
     [SerializeField] protected float attackTime;
     [SerializeField] protected float cooldownAttack;
