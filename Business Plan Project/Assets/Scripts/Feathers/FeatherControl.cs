@@ -11,17 +11,21 @@ public class FeatherControl : MonoBehaviour
     [SerializeField] float speedAttack;
     void Start()
     {
-        Transform player = GameObject.FindGameObjectWithTag("Player").transform;
+        
+        PlayerControl player = FindObjectOfType<PlayerControl>();
+        Transform playerPosition = player.transform;
         
         for (int i=0; i< featherPrefab.Length; i++){
-            GameObject spawnFeather = Instantiate(featherPrefab[i],player.position, Quaternion.identity);
+            GameObject spawnFeather = Instantiate(featherPrefab[i],playerPosition.position, Quaternion.identity);
             fthr = spawnFeather.GetComponent<Feather>();
-            
+
+            player.AddFeather(fthr);
+
             spacingX += i > featherPrefab.Length / 2 ? 0.1f : 0f;  
             spacingY = 0.1f*i;
             fthr.speedAttack = speedAttack;
-            fthr.SpacingX = spacingX;
-            fthr.SpacingY = spacingY;
+            fthr.spacingX = spacingX;
+            fthr.spacingY = spacingY;
         }
     }
     

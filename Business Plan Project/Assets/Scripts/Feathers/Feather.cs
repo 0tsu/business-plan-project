@@ -1,79 +1,67 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Feather : MonoBehaviour, IAttack
+public class Feather : MonoBehaviour, IMove, IAttack
 {
-    [SerializeField] Transform player;
+    [SerializeField] PlayerControl player;
 
-    [Header ("Move variables")]
+    [Header("Move variables")]
     [SerializeField] float speed = 1f;
-    [SerializeField] public float speedAttack = 0.5f;
     [SerializeField] float smoothness = 0.3f;
 
-    [Header("Spacing Variables")]
-    [SerializeField] float spacingX;
-    [SerializeField] float spacingY;
+    public float spacingY { get; set; }
+    public float spacingX { get; set; }
 
-    //private bool onFAttack;
-    Vector3 targetPosition;
-    public float SpacingX{
-        get { return spacingX; }
-        set { spacingX = value; }
-    }
-    public float SpacingY{
-        get { return spacingY; }
-        set { spacingY = value; }
-    }
+    public float speedAttack { get; set; }
+
+    float attackPosition = 1f;
 
     Vector3 currentVelocity;
-    
-    [Header ("Rotate variables")]
+
+    [Header("Rotate variables")]
     [SerializeField] float rotationSpeed = 10f;
-    
-    [Header ("Sine variables")]
+
+    [Header("Sine variables")]
     [SerializeField] float frequency = 0.4f;
     [SerializeField] float amplitude = 0.1f;
-    
-    
+    public bool isAttacking { get; set; }
+
 
     void Start()
     {
-        GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
-        player = playerGameObject.GetComponent<Transform>();
+        player = FindAnyObjectByType<PlayerControl>();
     }
-    void Update(){
-        MoveFeather();
+    void Update()
+    {
+        if (isAttacking)
+        {
+            Attack();
+            return;
+        }
+        Move();
         RotationFeather();
-        Attack();
     }
 
-    void MoveFeather(){ 
+    public void Move()
+    {
         float yOffset = Mathf.Sin(Time.time * speed * frequency) * amplitude;
-        Vector3 targetPosition = player.position + new Vector3(spacingX * player.localScale.x, yOffset + spacingY, 0f);
+        Vector3 targetPosition = player.transform.position + new Vector3(spacingX * player.transform.localScale.x, yOffset + spacingY, 0f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothness);
     }
     void RotationFeather()
     {
-        Vector3 targetDirection = player.position - transform.position; 
+        Vector3 targetDirection = player.transform.position - transform.position;
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
-        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-    
     public void Attack()
     {
-        targetPosition = player.position + new Vector3(1f, 0f,0f);
-        if (Input.GetKey(KeyCode.B))
-            StartCoroutine(AttackTime());
-    }
-    public IEnumerator AttackTime()
-    {
-        transform.position = Vector3.Lerp(transform.position, targetPosition, speedAttack * Time.deltaTime);
-        Quaternion targetRotation = Quaternion.AngleAxis(0, Vector3.forward);
+        float angle = player.transform.localScale.x <= 0f ? 180f : 0f;
+
+        Vector3 targetPosition = player.transform.position + new Vector3(attackPosition * player.transform.localScale.x, 0f, 0f);
+        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speedAttack * Time.deltaTime);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-        yield return null;
     }
-
 }

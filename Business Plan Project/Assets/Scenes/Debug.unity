@@ -174,7 +174,7 @@ MonoBehaviour:
   - {fileID: 5895360927816018950, guid: eebf5ef6717739546a2397d90577afa1, type: 3}
   spacingX: -0.3
   spacingY: 0.2
-  speedAttack: 0.5
+  speedAttack: 20
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.876431, y: -3.0895998, z: -10}
+  m_LocalPosition: {x: -7.5542316, y: -3.0895998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1841,7 +1841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8563949076619351034, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
       propertyPath: attackTime
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8563949076619351034, guid: 66cc6e0a7737afb4d91698e43c7b1615, type: 3}
       propertyPath: cooldownAttack

@@ -4,15 +4,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerControl : Character, IMove, IAttack
+public class PlayerControl : Character, IMove, IAttack, IAttacking
 {
-    
-    [SerializeField] Feather[] Fthr;
-    [SerializeField] int indexFeather;
-    [Header("Move variables")]
-    public float xAxis;
-    
-    [Header("Jump variables")]
+
+    List<Feather> fthrs = new List<Feather>();
+    public void AddFeather(Feather fthr)
+    {
+        fthrs.Add(fthr);
+    }
+
+    int indexFeather;
+
+    //Move variables
+    public float xAxis {  get; private set; }
+
+    //Jump variables
     [SerializeField] float jumpForce;
     [SerializeField] Transform GroundCollider;
     [SerializeField] LayerMask GroundLayer;
@@ -34,7 +40,6 @@ public class PlayerControl : Character, IMove, IAttack
     
     public void Move()
     {
-        if (isAttacking) return;
         xAxis = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed;
         rb2D.velocity = new Vector2(xAxis * speed, rb2D.velocity.y); 
     }
@@ -42,7 +47,7 @@ public class PlayerControl : Character, IMove, IAttack
     {
         return Physics2D.OverlapCircle(GroundCollider.position, 0.1f, GroundLayer);
     }
-    private void PlayerJump()
+    void PlayerJump()
     {
         if(Input.GetKeyDown(KeyCode.Space) && IsGround())
         {
@@ -52,7 +57,6 @@ public class PlayerControl : Character, IMove, IAttack
 
     void Flip()
     {
-        
         float scaleX = transform.localScale.x;
         scaleX = xAxis < 0 ? -1 : scaleX;
         scaleX = xAxis > 0 ? 1 : scaleX;
@@ -60,25 +64,27 @@ public class PlayerControl : Character, IMove, IAttack
     }
     public void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.J) && !onAttack)
+        if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
         {
-            StartCoroutine(AttackTime());
+            StartCoroutine(Attacking(attackTime));
         }
     }
-
-    public IEnumerator AttackTime()
+    public IEnumerator Attacking(float attackTime)
     {
-        onAttack = true;
-        //Fthr[indexFeather].onFAttack = true;
-        
-        yield return new WaitForSeconds(attackTime);
-        //Fthr[indexFeather].onFAttack = false;
-        
-        yield return new WaitForSeconds(cooldownAttack);
-        onAttack = false;
+
+        fthrs[indexFeather].isAttacking = true;
+        isAttacking = true;
+
+        Debug.Log(indexFeather);
+        yield return new WaitForSecondsRealtime(attackTime);
+
+
+        fthrs[indexFeather].isAttacking = false;
+        isAttacking = false;
 
         indexFeather++;
-        if (indexFeather >= Fthr.Length)
-            indexFeather = 0;
+        indexFeather = indexFeather < fthrs.Count ? indexFeather : 0;
+
     }
+
 }
