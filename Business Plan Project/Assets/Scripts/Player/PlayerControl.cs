@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerControl : Character, IMove, IAttack, IAttacking
+public class PlayerControl : Character
 {
 
     List<Feather> fthrs = new List<Feather>();
@@ -14,10 +14,9 @@ public class PlayerControl : Character, IMove, IAttack, IAttacking
     }
 
     int indexFeather;
-
     //Move variables
     public float xAxis {  get; private set; }
-
+    
     //Jump variables
     [SerializeField] float jumpForce;
     [SerializeField] Transform GroundCollider;
@@ -25,9 +24,20 @@ public class PlayerControl : Character, IMove, IAttack, IAttacking
 
     void Start()
     {
+
         Application.targetFrameRate = 60;
-        QualitySettings.vSyncCount = 0;
+        //QualitySettings.vSyncCount = 0;
         rb2D = GetComponent<Rigidbody2D>();
+    }
+    void OnEnable(){
+        Feather.OnAttackEnd += OnFeatherAttackEnded;
+    }
+    void OnDisable(){
+        Feather.OnAttackEnd -= OnFeatherAttackEnded;
+    }
+    void OnFeatherAttackEnded()
+    {
+        isAttacking = false;
     }
 
     void Update() 
@@ -40,8 +50,9 @@ public class PlayerControl : Character, IMove, IAttack, IAttacking
     
     public void Move()
     {
-        xAxis = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed;
-        rb2D.velocity = new Vector2(xAxis * speed, rb2D.velocity.y); 
+        xAxis = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
+        Vector2 move = new Vector2(xAxis * speed, rb2D.velocity.y); 
+        rb2D.velocity = move;
     }
     bool IsGround()
     {
@@ -66,25 +77,16 @@ public class PlayerControl : Character, IMove, IAttack, IAttacking
     {
         if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
         {
-            StartCoroutine(Attacking(attackTime));
+            // StartCoroutine(Attacking(attackTime));
+            isAttacking = true;
+            fthrs[indexFeather].Attack();
+            SelectNextFeather();
         }
+
     }
-    public IEnumerator Attacking(float attackTime)
-    {
-
-        fthrs[indexFeather].isAttacking = true;
-        isAttacking = true;
-
-        Debug.Log(indexFeather);
-        yield return new WaitForSecondsRealtime(attackTime);
-
-
-        fthrs[indexFeather].isAttacking = false;
-        isAttacking = false;
-
+    
+    private void SelectNextFeather(){
         indexFeather++;
         indexFeather = indexFeather < fthrs.Count ? indexFeather : 0;
-
     }
-
 }

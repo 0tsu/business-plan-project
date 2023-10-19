@@ -1,12 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
-public class Feather : MonoBehaviour, IMove, IAttack
+public class Feather : MonoBehaviour
 {
+    public delegate void OnAttackEndedAction();
+    public static event OnAttackEndedAction OnAttackEnd;
     [SerializeField] PlayerControl player;
 
     [Header("Move variables")]
     [SerializeField] float speed = 1f;
     [SerializeField] float smoothness = 0.3f;
+
+    Vector3 targetPosition;
+    Quaternion targetRotation;
 
     public float spacingY { get; set; }
     public float spacingX { get; set; }
@@ -23,8 +31,8 @@ public class Feather : MonoBehaviour, IMove, IAttack
     [Header("Sine variables")]
     [SerializeField] float frequency = 0.4f;
     [SerializeField] float amplitude = 0.1f;
-    public bool isAttacking { get; set; }
 
+    [SerializeField] bool isAttacking;
 
     void Start()
     {
@@ -34,13 +42,12 @@ public class Feather : MonoBehaviour, IMove, IAttack
     {
         if (isAttacking)
         {
-            Attack();
+            MoveAttack();
             return;
         }
         Move();
         RotationFeather();
     }
-
     public void Move()
     {
         float yOffset = Mathf.Sin(Time.time * speed * frequency) * amplitude;
@@ -54,14 +61,26 @@ public class Feather : MonoBehaviour, IMove, IAttack
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-    public void Attack()
-    {
+    public void Attack(){
+        isAttacking = true;
+
+        targetPosition = player.transform.position + new Vector3(attackPosition * player.transform.localScale.x, 0f, 0f);
+
         float angle = player.transform.localScale.x <= 0f ? 180f : 0f;
-
-        Vector3 targetPosition = player.transform.position + new Vector3(attackPosition * player.transform.localScale.x, 0f, 0f);
-        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speedAttack * Time.deltaTime);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
+    async void MoveAttack()
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speedAttack * Time.deltaTime);
+        
+        if((transform.position - targetPosition).magnitude < 0.1f){
+            isAttacking = false;
+            await Task.Delay(600);
+            if (OnAttackEnd != null) 
+            {
+                OnAttackEnd();
+            }
+        }  
+    }   
 }
