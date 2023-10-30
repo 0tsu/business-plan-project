@@ -9,9 +9,10 @@ public class FeatherControl : MonoBehaviour
     [SerializeField] float spacingX;
     [SerializeField] float spacingY;
     [SerializeField] float speedAttack;
+    
     void Start()
     {
-        
+
         PlayerControl player = FindObjectOfType<PlayerControl>();
         Transform playerPosition = player.transform;
         
@@ -28,5 +29,27 @@ public class FeatherControl : MonoBehaviour
             fthr.spacingY = spacingY;
         }
     }
-    
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P)) 
+        {
+            IsApplicationValues();
+        }
+    }
+    void IsApplicationValues()
+    {
+        for (int i = 0; i < featherPrefab.Length; i++)
+        {
+            fthr = featherPrefab[i].GetComponent<Feather>();
+            ValuesForAplication(fthr);
+        }
+        Debug.Log("Values successfully applied");
+    }
+    void ValuesForAplication(Feather fthr)
+    {
+        fthr.speedAttack = speedAttack;
+        fthr.spacingX = spacingX;
+        fthr.spacingY = spacingY;
+
+    }
 }

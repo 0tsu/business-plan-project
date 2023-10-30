@@ -1,8 +1,18 @@
 fileFormatVersion: 2
-guid: 7bacb594c45e23b4dbb7750be516140f
+guid: de32cdec36382a547a8df95fa6f07989
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Player_Walk_Clip
+    second: {fileID: 7400000, guid: d079dd2e53a3be54b8f79401ad850fbc, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk_Clip
+    second: {fileID: 7400000, guid: acdda106b59a58547a570f453b3978ad, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +105,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638336577190003413
+  platformSettingsDirtyTick: 638336577190013411
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +129,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Corvo_Brabo_Queda_Frame_0
+  - name: Player_Walk_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 1}
+    pivot: {x: 0.46875, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 35
-      y: 44
-      width: 22
-      height: 32
-    spriteID: ec60331882b29b34c8436ea607e1c248
+      x: 33
+      y: 42
+      width: 16
+      height: 31
+    spriteID: de8e3e19cf67f1640bb475491bfcc2de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,19 +148,59 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 35, y: 44}
-  - name: Corvo_Brabo_Queda_Frame_1
+    uvTransform: {x: 33, y: 42}
+  - name: Player_Walk_Frame_1
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.5, y: 0.51666665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 4
+      width: 17
+      height: 30
+    spriteID: 5f1707e7a775ecb4ca169a0da1e00016
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 33, y: 4}
+  - name: Player_Walk_Frame_2
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 19
+      height: 31
+    spriteID: 19236d7cac5da0f40a1be72faaf12a3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: Player_Walk_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 23
-      height: 32
-    spriteID: 142450afba69fda4694efa80bf44b80a
+      width: 21
+      height: 31
+    spriteID: 370eaeea0ea85f746bf3f3aad337b79e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,18 +209,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Corvo_Brabo_Queda_Frame_2
+  - name: Player_Walk_Frame_4
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.4722222, y: 0.51666665}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 44
-      width: 23
-      height: 32
-    spriteID: 40b78d259c7b17644839a09f9639526d
+      y: 82
+      width: 18
+      height: 30
+    spriteID: 9ca8bc9fdfb070142955e2dadb150a39
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,19 +228,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: Corvo_Brabo_Queda_Frame_3
+    uvTransform: {x: 4, y: 82}
+  - name: Player_Walk_Frame_5
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.46875, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 84
-      width: 23
-      height: 32
-    spriteID: ab1048f18fd27004eb1d5eeac6599f0e
+      x: 33
+      y: 81
+      width: 16
+      height: 31
+    spriteID: 6dfc8b13548b7f444ae8b36f6e3db351
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,104 +248,64 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: Corvo_Brabo_Queda_Frame_4
-    originalName: 
-    pivot: {x: 0.47826087, y: 1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 35
-      y: 4
-      width: 23
-      height: 32
-    spriteID: 4dd516376dfda4148a4bac9fd56e1b7a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 35, y: 4}
-  - name: Corvo_Brabo_Queda_Frame_5
-    originalName: 
-    pivot: {x: 0.5, y: 1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 35
-      y: 84
-      width: 22
-      height: 32
-    spriteID: c19fd2f1ad897cb488d1b001c261deb6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 35, y: 84}
+    uvTransform: {x: 33, y: 81}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1968682217
-    name: Corvo_Brabo_Queda
+    guid: 392117645
+    name: Player_Walk
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Corvo_Brabo_Queda_Frame_0
+    - name: Player_Walk_Frame_0
       frameIndex: 0
       cellRect:
-        x: 21
+        x: 3
         y: 0
-        width: 22
-        height: 32
-      spriteId: ec60331882b29b34c8436ea607e1c248
-    - name: Corvo_Brabo_Queda_Frame_1
+        width: 16
+        height: 31
+      spriteId: de8e3e19cf67f1640bb475491bfcc2de
+    - name: Player_Walk_Frame_1
       frameIndex: 1
       cellRect:
-        x: 21
+        x: 2
         y: 0
-        width: 23
-        height: 32
-      spriteId: 142450afba69fda4694efa80bf44b80a
-    - name: Corvo_Brabo_Queda_Frame_2
+        width: 17
+        height: 30
+      spriteId: 5f1707e7a775ecb4ca169a0da1e00016
+    - name: Player_Walk_Frame_2
       frameIndex: 2
       cellRect:
-        x: 21
+        x: 1
         y: 0
-        width: 23
-        height: 32
-      spriteId: 40b78d259c7b17644839a09f9639526d
-    - name: Corvo_Brabo_Queda_Frame_3
+        width: 19
+        height: 31
+      spriteId: 19236d7cac5da0f40a1be72faaf12a3f
+    - name: Player_Walk_Frame_3
       frameIndex: 3
       cellRect:
-        x: 21
+        x: 0
         y: 0
-        width: 23
-        height: 32
-      spriteId: ab1048f18fd27004eb1d5eeac6599f0e
-    - name: Corvo_Brabo_Queda_Frame_4
+        width: 21
+        height: 31
+      spriteId: 370eaeea0ea85f746bf3f3aad337b79e
+    - name: Player_Walk_Frame_4
       frameIndex: 4
       cellRect:
-        x: 21
+        x: 2
         y: 0
-        width: 23
-        height: 32
-      spriteId: 4dd516376dfda4148a4bac9fd56e1b7a
-    - name: Corvo_Brabo_Queda_Frame_5
+        width: 18
+        height: 30
+      spriteId: 9ca8bc9fdfb070142955e2dadb150a39
+    - name: Player_Walk_Frame_5
       frameIndex: 5
       cellRect:
-        x: 21
+        x: 3
         y: 0
-        width: 22
-        height: 32
-      spriteId: c19fd2f1ad897cb488d1b001c261deb6
+        width: 16
+        height: 31
+      spriteId: 6dfc8b13548b7f444ae8b36f6e3db351
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -361,4 +371,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
+  canvasSize: {x: 21, y: 31}

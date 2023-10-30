@@ -21,7 +21,7 @@ public class Feather : MonoBehaviour
 
     public float speedAttack { get; set; }
 
-    float attackPosition = 1f;
+    public float attackPosition = 1f;
 
     Vector3 currentVelocity;
 
@@ -34,12 +34,10 @@ public class Feather : MonoBehaviour
 
     [SerializeField] bool isAttacking;
 
-    void Start()
-    {
+    void Start(){
         player = FindAnyObjectByType<PlayerControl>();
     }
-    void Update()
-    {
+    void Update(){
         if (isAttacking)
         {
             MoveAttack();
@@ -48,14 +46,12 @@ public class Feather : MonoBehaviour
         Move();
         RotationFeather();
     }
-    public void Move()
-    {
+    public void Move(){
         float yOffset = Mathf.Sin(Time.time * speed * frequency) * amplitude;
         Vector3 targetPosition = player.transform.position + new Vector3(spacingX * player.transform.localScale.x, yOffset + spacingY, 0f);
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothness);
     }
-    void RotationFeather()
-    {
+    void RotationFeather(){
         Vector3 targetDirection = player.transform.position - transform.position;
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -69,18 +65,19 @@ public class Feather : MonoBehaviour
         float angle = player.transform.localScale.x <= 0f ? 180f : 0f;
         targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
-    async void MoveAttack()
-    {
+    void MoveAttack(){
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speedAttack * Time.deltaTime);
         
-        if((transform.position - targetPosition).magnitude < 0.1f){
+        if((transform.position - targetPosition).magnitude < 0.05f){
             isAttacking = false;
-            await Task.Delay(600);
-            if (OnAttackEnd != null) 
-            {
-                OnAttackEnd();
-            }
-        }  
-    }   
+            StartCoroutine(IsAttackEnd());
+        }
+    }
+    IEnumerator IsAttackEnd(){
+        yield return new WaitForSeconds(0.5f);
+        if (OnAttackEnd != null){
+            OnAttackEnd();
+        }
+    }
 }

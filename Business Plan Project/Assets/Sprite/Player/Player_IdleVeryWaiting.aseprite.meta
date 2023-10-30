@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bacb594c45e23b4dbb7750be516140f
+guid: 20da69d25dcee9343b0a43c95ceb7ac1
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638336577190003413
+  platformSettingsDirtyTick: 638336577190013411
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,38 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Corvo_Brabo_Queda_Frame_0
+  - name: Player_IdleVeryWaiting_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 35
-      y: 44
-      width: 22
-      height: 32
-    spriteID: ec60331882b29b34c8436ea607e1c248
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 35, y: 44}
-  - name: Corvo_Brabo_Queda_Frame_1
-    originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.47727275, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 23
-      height: 32
-    spriteID: 142450afba69fda4694efa80bf44b80a
+      width: 22
+      height: 31
+    spriteID: 5c17a3f7cfe159d4a86929d93abbd4c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,18 +139,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Corvo_Brabo_Queda_Frame_2
+  - name: Player_IdleVeryWaiting_Frame_1
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.575, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 44
-      width: 23
-      height: 32
-    spriteID: 40b78d259c7b17644839a09f9639526d
+      y: 43
+      width: 20
+      height: 31
+    spriteID: 01c34f177f7d60d479ed7c8b42caabe6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,19 +158,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: Corvo_Brabo_Queda_Frame_3
+    uvTransform: {x: 4, y: 43}
+  - name: Player_IdleVeryWaiting_Frame_2
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.625, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 84
-      width: 23
-      height: 32
-    spriteID: ab1048f18fd27004eb1d5eeac6599f0e
+      y: 82
+      width: 20
+      height: 31
+    spriteID: 3ff185d34bc634340bafec34733ee8de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,19 +178,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: Corvo_Brabo_Queda_Frame_4
+    uvTransform: {x: 4, y: 82}
+  - name: Player_IdleVeryWaiting_Frame_3
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
+    pivot: {x: 0.575, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 35
+      x: 34
       y: 4
-      width: 23
-      height: 32
-    spriteID: 4dd516376dfda4148a4bac9fd56e1b7a
+      width: 20
+      height: 31
+    spriteID: 8e6941cf0b69dbc49b06cf5452ce2175
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -218,19 +198,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 35, y: 4}
-  - name: Corvo_Brabo_Queda_Frame_5
+    uvTransform: {x: 34, y: 4}
+  - name: Player_IdleVeryWaiting_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 1}
+    pivot: {x: 0.475, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 35
-      y: 84
-      width: 22
-      height: 32
-    spriteID: c19fd2f1ad897cb488d1b001c261deb6
+      x: 34
+      y: 43
+      width: 20
+      height: 31
+    spriteID: 9e0a540c4e6f06f449b5993b55dbcf34
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -238,64 +218,140 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 35, y: 84}
+    uvTransform: {x: 34, y: 43}
+  - name: Player_IdleVeryWaiting_Frame_5
+    originalName: 
+    pivot: {x: 0.475, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 34
+      y: 82
+      width: 20
+      height: 31
+    spriteID: efd4822c6ec632144a7be15264ff68c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 34, y: 82}
+  - name: Player_IdleVeryWaiting_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 43
+      width: 19
+      height: 31
+    spriteID: 71a32cba2dceb5e4ba615889b75fa8bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 43}
+  - name: Player_IdleVeryWaiting_Frame_7
+    originalName: 
+    pivot: {x: 0.52500004, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 4
+      width: 20
+      height: 31
+    spriteID: 4c034a92f6a50a645af1f285448414d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1968682217
-    name: Corvo_Brabo_Queda
+    guid: -1404380229
+    name: Player_IdleVeryWaiting
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Corvo_Brabo_Queda_Frame_0
+    - name: Player_IdleVeryWaiting_Frame_0
       frameIndex: 0
       cellRect:
-        x: 21
+        x: 2
         y: 0
         width: 22
-        height: 32
-      spriteId: ec60331882b29b34c8436ea607e1c248
-    - name: Corvo_Brabo_Queda_Frame_1
+        height: 31
+      spriteId: 5c17a3f7cfe159d4a86929d93abbd4c0
+    - name: Player_IdleVeryWaiting_Frame_1
       frameIndex: 1
       cellRect:
-        x: 21
+        x: 1
         y: 0
-        width: 23
-        height: 32
-      spriteId: 142450afba69fda4694efa80bf44b80a
-    - name: Corvo_Brabo_Queda_Frame_2
+        width: 20
+        height: 31
+      spriteId: 01c34f177f7d60d479ed7c8b42caabe6
+    - name: Player_IdleVeryWaiting_Frame_2
       frameIndex: 2
       cellRect:
-        x: 21
+        x: 0
         y: 0
-        width: 23
-        height: 32
-      spriteId: 40b78d259c7b17644839a09f9639526d
-    - name: Corvo_Brabo_Queda_Frame_3
+        width: 20
+        height: 31
+      spriteId: 3ff185d34bc634340bafec34733ee8de
+    - name: Player_IdleVeryWaiting_Frame_3
       frameIndex: 3
       cellRect:
-        x: 21
+        x: 1
         y: 0
-        width: 23
-        height: 32
-      spriteId: ab1048f18fd27004eb1d5eeac6599f0e
-    - name: Corvo_Brabo_Queda_Frame_4
+        width: 20
+        height: 31
+      spriteId: 8e6941cf0b69dbc49b06cf5452ce2175
+    - name: Player_IdleVeryWaiting_Frame_4
       frameIndex: 4
       cellRect:
-        x: 21
+        x: 3
         y: 0
-        width: 23
-        height: 32
-      spriteId: 4dd516376dfda4148a4bac9fd56e1b7a
-    - name: Corvo_Brabo_Queda_Frame_5
+        width: 20
+        height: 31
+      spriteId: 9e0a540c4e6f06f449b5993b55dbcf34
+    - name: Player_IdleVeryWaiting_Frame_5
       frameIndex: 5
       cellRect:
-        x: 21
+        x: 3
         y: 0
-        width: 22
-        height: 32
-      spriteId: c19fd2f1ad897cb488d1b001c261deb6
+        width: 20
+        height: 31
+      spriteId: efd4822c6ec632144a7be15264ff68c1
+    - name: Player_IdleVeryWaiting_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 3
+        y: 0
+        width: 19
+        height: 31
+      spriteId: 71a32cba2dceb5e4ba615889b75fa8bc
+    - name: Player_IdleVeryWaiting_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 2
+        y: 0
+        width: 20
+        height: 31
+      spriteId: 4c034a92f6a50a645af1f285448414d7
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -361,4 +417,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
+  canvasSize: {x: 25, y: 31}

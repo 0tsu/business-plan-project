@@ -4,8 +4,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerControl : Character
+public class PlayerControl : MonoBehaviour
 {
+    Animator anim;
+
+    [SerializeField] float speed;
+
+    [Header("Attack variables")]
+    public bool isAttacking;
+    Rigidbody2D rb2D;
 
     List<Feather> fthrs = new List<Feather>();
     public void AddFeather(Feather fthr)
@@ -13,58 +20,85 @@ public class PlayerControl : Character
         fthrs.Add(fthr);
     }
 
-    int indexFeather;
+    [SerializeField]int indexFeather;
     //Move variables
     public float xAxis {  get; private set; }
-    
+
     //Jump variables
     [SerializeField] float jumpForce;
+    [SerializeField] float buttonPressedTime;
+    [SerializeField] float fallMultiplier;
+    [SerializeField] float lowJumpMultiplier;
     [SerializeField] Transform GroundCollider;
     [SerializeField] LayerMask GroundLayer;
 
     void Start()
     {
-
+        anim = GetComponent<Animator>();
         Application.targetFrameRate = 60;
-        //QualitySettings.vSyncCount = 0;
+        QualitySettings.vSyncCount = 0;
         rb2D = GetComponent<Rigidbody2D>();
     }
+
+#region Events
+
     void OnEnable(){
         Feather.OnAttackEnd += OnFeatherAttackEnded;
     }
+
     void OnDisable(){
         Feather.OnAttackEnd -= OnFeatherAttackEnded;
     }
-    void OnFeatherAttackEnded()
-    {
-        isAttacking = false;
-    }
+
+    #endregion
 
     void Update() 
     {
         Attack();
-        PlayerJump();
         Move();
+        PlayerJump();
         Flip();
+        AnimatorController();
     }
-    
+
+    private void AnimatorController()
+    {
+        anim.SetBool("Walk", xAxis >= 0f);
+    }
+
+#region ControllerFunctions
+    #region MoveSystem
     public void Move()
     {
-        xAxis = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
-        Vector2 move = new Vector2(xAxis * speed, rb2D.velocity.y); 
-        rb2D.velocity = move;
+        xAxis = (Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime);
+        rb2D.velocity = new Vector2(xAxis * speed, rb2D.velocity.y);
+        
     }
-    bool IsGround()
+    #endregion
+    #region JumpSytem
+    private bool IsGround()
     {
         return Physics2D.OverlapCircle(GroundCollider.position, 0.1f, GroundLayer);
     }
     void PlayerJump()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && IsGround())
+        if (Input.GetButtonDown("Jump") && IsGround())
         {
-            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+                rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+        }
+
+        if (rb2D.velocity.y < 0)
+        {
+            rb2D.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb2D.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            rb2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
+    #endregion
+
+#endregion
 
     void Flip()
     {
@@ -73,11 +107,18 @@ public class PlayerControl : Character
         scaleX = xAxis > 0 ? 1 : scaleX;
         transform.localScale = new Vector3(scaleX, 1, 1);
     }
+
+#region AttackFunctions
+
+    void OnFeatherAttackEnded()
+    {
+        isAttacking = false;
+    }
+
     public void Attack()
     {
         if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
         {
-            // StartCoroutine(Attacking(attackTime));
             isAttacking = true;
             fthrs[indexFeather].Attack();
             SelectNextFeather();
@@ -89,4 +130,6 @@ public class PlayerControl : Character
         indexFeather++;
         indexFeather = indexFeather < fthrs.Count ? indexFeather : 0;
     }
+
+    #endregion
 }

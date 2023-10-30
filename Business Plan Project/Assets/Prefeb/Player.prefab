@@ -79,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1097150767, guid: 308e240859be2fd4fa4d3dcd5956de1a, type: 3}
+  m_Sprite: {fileID: 5671954243898858830, guid: cc471f8f537046547ae28734eecd6553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.6201172}
+  m_Size: {x: 0.39583334, y: 0.6458333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -185,18 +185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b11644816ea0c47a04ca8d31671cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedPlayer: 10
+  speed: 0
+  isAttacking: 0
   jumpForce: 5
   GroundCollider: {fileID: 5739397355831577967}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 8
-  xAxis: 0
-  isAttacking: 0
-  onAttack: 1
-  attackTime: 0
-  cooldownAttack: 0
-  currentFeatherIndex: 0
 --- !u!114 &7514190380030910547
 MonoBehaviour:
   m_ObjectHideFlags: 0
