@@ -21,7 +21,7 @@ public class Feather : MonoBehaviour
 
     public float speedAttack { get; set; }
 
-    public float attackPosition = 1f;
+    public float attackPosition = 2f;
 
     Vector3 currentVelocity;
 

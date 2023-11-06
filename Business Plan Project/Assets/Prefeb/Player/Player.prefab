@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 246430177232437763}
   - component: {fileID: 5965799196008965530}
   - component: {fileID: 8563949076619351034}
-  - component: {fileID: 7514190380030910547}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -187,23 +186,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   isAttacking: 0
+  indexFeather: 0
   jumpForce: 5
+  buttonPressedTime: 0
+  fallMultiplier: 0
+  lowJumpMultiplier: 0
   GroundCollider: {fileID: 5739397355831577967}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 8
---- !u!114 &7514190380030910547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4282868939630981425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ec1847aa7094547b1bff76aaa11da0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8704389700015545801
 GameObject:
   m_ObjectHideFlags: 0

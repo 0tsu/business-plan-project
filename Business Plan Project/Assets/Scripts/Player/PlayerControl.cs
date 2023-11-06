@@ -7,12 +7,12 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     Animator anim;
+    Rigidbody2D rb2D;
 
     [SerializeField] float speed;
 
     [Header("Attack variables")]
     public bool isAttacking;
-    Rigidbody2D rb2D;
 
     List<Feather> fthrs = new List<Feather>();
     public void AddFeather(Feather fthr)
@@ -27,8 +27,7 @@ public class PlayerControl : MonoBehaviour
     //Jump variables
     [SerializeField] float jumpForce;
     [SerializeField] float buttonPressedTime;
-    [SerializeField] float fallMultiplier;
-    [SerializeField] float lowJumpMultiplier;
+
     [SerializeField] Transform GroundCollider;
     [SerializeField] LayerMask GroundLayer;
 
@@ -63,37 +62,35 @@ public class PlayerControl : MonoBehaviour
 
     private void AnimatorController()
     {
-        anim.SetBool("Walk", xAxis >= 0f);
+        anim.SetBool("Walk", Mathf.Abs(xAxis) > 0f);
     }
 
 #region ControllerFunctions
     #region MoveSystem
     public void Move()
     {
-        xAxis = (Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime);
-        rb2D.velocity = new Vector2(xAxis * speed, rb2D.velocity.y);
+        xAxis = Input.GetAxisRaw("Horizontal");
+        float moveX = xAxis * speed * Time.deltaTime;
+        rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);
         
     }
     #endregion
     #region JumpSytem
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(GroundCollider.position, GroundCollider.localScale);
+    }
     private bool IsGround()
     {
-        return Physics2D.OverlapCircle(GroundCollider.position, 0.1f, GroundLayer);
+        return Physics2D.OverlapBox(GroundCollider.position, GroundCollider.localScale, 0f, GroundLayer);
     }
     void PlayerJump()
     {
         if (Input.GetButtonDown("Jump") && IsGround())
         {
-                rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
-        }
-
-        if (rb2D.velocity.y < 0)
-        {
-            rb2D.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (rb2D.velocity.y > 0 && !Input.GetButton("Jump"))
-        {
-            rb2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
         }
     }
     #endregion

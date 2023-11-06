@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e6d2a7834ecc554a8053d998c785ff8
+guid: 79055df2556d6f2429e1670bd7327975
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 260
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -73,29 +73,29 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 1
+    generateModelPrefab: 0
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 1
+    generateModelPrefab: 0
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638346890812170003
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,9 +119,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sapo_muito_foda_Frame_0
+  - name: Layer_Frame_0
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 180
       height: 216
-    spriteID: c594538d437d30645af747f4538b24f9
+    spriteID: 6edd31e4a680ccc4e8de55fd994bb3ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,10 +138,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -86, y: 4}
-  - name: Sapo_muito_foda_Frame_1
+    uvTransform: {x: 4, y: 4}
+  - name: Layer_Frame_1
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 228
       width: 180
       height: 216
-    spriteID: 5b9f03865ca89fc44b75005eb26c969b
+    spriteID: 0096d24a50935874493584778d9b87f0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -158,10 +158,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -86, y: 228}
-  - name: Sapo_muito_foda_Frame_2
+    uvTransform: {x: 4, y: 228}
+  - name: Layer_Frame_2
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 452
       width: 180
       height: 216
-    spriteID: b75a0dd3227997f4bb628fcc3d34d94c
+    spriteID: 8abe1b2f8430b3d4c9016a4c9f58b66e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,10 +178,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -86, y: 452}
-  - name: Sapo_muito_foda_Frame_3
+    uvTransform: {x: 4, y: 452}
+  - name: Layer_Frame_3
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 676
       width: 180
       height: 216
-    spriteID: c6393742a97c17a448141f6ac57d345b
+    spriteID: 3ffea5b979a8b1d45ae464e772632797
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,10 +198,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -86, y: 676}
-  - name: Sapo_muito_foda_Frame_4
+    uvTransform: {x: 4, y: 676}
+  - name: Layer_Frame_4
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 4
       width: 180
       height: 216
-    spriteID: 3612311f65e01e748be95919dbbf0b67
+    spriteID: d779acb9c927f154a882ec593a913d1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -218,10 +218,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 4}
-  - name: Sapo_muito_foda_Frame_5
+    uvTransform: {x: 192, y: 4}
+  - name: Layer_Frame_5
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 228
       width: 180
       height: 216
-    spriteID: e1ee51485ceeafd40b216bfda92084ff
+    spriteID: 93bcee09ec81c7d4f8641762980ae664
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -238,10 +238,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 228}
-  - name: Sapo_muito_foda_Frame_6
+    uvTransform: {x: 192, y: 228}
+  - name: Layer_Frame_6
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 452
       width: 180
       height: 216
-    spriteID: 45d33b99abe932042b74c60f0003c67f
+    spriteID: f2da6dd6bb279bf41a56aa6599a8ae4d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -258,10 +258,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 452}
-  - name: Sapo_muito_foda_Frame_7
+    uvTransform: {x: 192, y: 452}
+  - name: Layer_Frame_7
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 676
       width: 180
       height: 216
-    spriteID: 73882e5bdd77ba94eb29f2c8daafdc54
+    spriteID: f50443750df304d489f95bed19ded580
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -278,10 +278,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 676}
-  - name: Sapo_muito_foda_Frame_8
+    uvTransform: {x: 192, y: 676}
+  - name: Layer_Frame_8
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 4
       width: 180
       height: 216
-    spriteID: 7ae30b8a5796ef94a904ee20b615178a
+    spriteID: 003a09e5f6861fd48832e3b30cca0cc2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -298,10 +298,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 290, y: 4}
-  - name: Sapo_muito_foda_Frame_9
+    uvTransform: {x: 380, y: 4}
+  - name: Layer_Frame_9
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 228
       width: 180
       height: 216
-    spriteID: 70ebe98eb47a03c4a925686a00c3c24e
+    spriteID: c8f27154c28a87a45ba4f8438e4c773f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -318,10 +318,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 290, y: 228}
-  - name: Sapo_muito_foda_Frame_10
+    uvTransform: {x: 380, y: 228}
+  - name: Layer_Frame_10
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 452
       width: 180
       height: 216
-    spriteID: fcf3d404f5b173b41a19433f5d222ef2
+    spriteID: 9d5cb6324f70b994f8cb5e8f9d92d53c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -338,10 +338,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 290, y: 452}
-  - name: Sapo_muito_foda_Frame_11
+    uvTransform: {x: 380, y: 452}
+  - name: Layer_Frame_11
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 676
       width: 180
       height: 216
-    spriteID: 9310031389729d248b34f5fd88f27659
+    spriteID: b4aa5c0af6b383c40aba6662862d96b9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -358,10 +358,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 290, y: 676}
-  - name: Sapo_muito_foda_Frame_12
+    uvTransform: {x: 380, y: 676}
+  - name: Layer_Frame_12
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 4
       width: 180
       height: 216
-    spriteID: 4d2405fd269fa544faa980b2992f5469
+    spriteID: 528b155b0c0e08042be6c61de7d40f2a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -378,10 +378,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 478, y: 4}
-  - name: Sapo_muito_foda_Frame_13
+    uvTransform: {x: 568, y: 4}
+  - name: Layer_Frame_13
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 228
       width: 180
       height: 216
-    spriteID: 44fd0aac017b92c4dbad30d6b1d4088c
+    spriteID: 2f2dc312b54a1a74a80f54fb513f06de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -398,10 +398,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 478, y: 228}
-  - name: Sapo_muito_foda_Frame_14
+    uvTransform: {x: 568, y: 228}
+  - name: Layer_Frame_14
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -410,7 +410,7 @@ ScriptedImporter:
       y: 452
       width: 180
       height: 216
-    spriteID: 5436aee58fccb9a4490b0981f0aafb39
+    spriteID: 5bbeef51c48dd034db043bc17268bb93
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -418,10 +418,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 478, y: 452}
-  - name: Sapo_muito_foda_Frame_15
+    uvTransform: {x: 568, y: 452}
+  - name: Layer_Frame_15
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -430,7 +430,7 @@ ScriptedImporter:
       y: 676
       width: 180
       height: 216
-    spriteID: 56abc61c4158c1a4b8aba4a8c6cc1670
+    spriteID: 991125e07c16a654e972482d06868544
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -438,10 +438,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 478, y: 676}
-  - name: Sapo_muito_foda_Frame_16
+    uvTransform: {x: 568, y: 676}
+  - name: Layer_Frame_16
     originalName: 
-    pivot: {x: 0.5666667, y: 0}
+    pivot: {x: 0.5798514, y: 0.4023944}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -450,7 +450,7 @@ ScriptedImporter:
       y: 4
       width: 180
       height: 216
-    spriteID: d1ea1f8ab643bd2409f1528c33d6361a
+    spriteID: 88e2fbbb72db1554cba5598027b97d2a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -458,155 +458,215 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 666, y: 4}
+    uvTransform: {x: 756, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1000596681
-    name: Sapo_muito_foda
-    layerFlags: 0
+    guid: -1949975077
+    name: Layer
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Sapo_muito_foda_Frame_0
+    - name: Layer_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: c594538d437d30645af747f4538b24f9
-    - name: Sapo_muito_foda_Frame_1
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 6edd31e4a680ccc4e8de55fd994bb3ae
+    - name: Layer_Frame_1
       frameIndex: 1
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 5b9f03865ca89fc44b75005eb26c969b
-    - name: Sapo_muito_foda_Frame_2
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 0096d24a50935874493584778d9b87f0
+    - name: Layer_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: b75a0dd3227997f4bb628fcc3d34d94c
-    - name: Sapo_muito_foda_Frame_3
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 8abe1b2f8430b3d4c9016a4c9f58b66e
+    - name: Layer_Frame_3
       frameIndex: 3
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: c6393742a97c17a448141f6ac57d345b
-    - name: Sapo_muito_foda_Frame_4
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 3ffea5b979a8b1d45ae464e772632797
+    - name: Layer_Frame_4
       frameIndex: 4
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 3612311f65e01e748be95919dbbf0b67
-    - name: Sapo_muito_foda_Frame_5
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: d779acb9c927f154a882ec593a913d1d
+    - name: Layer_Frame_5
       frameIndex: 5
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: e1ee51485ceeafd40b216bfda92084ff
-    - name: Sapo_muito_foda_Frame_6
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 93bcee09ec81c7d4f8641762980ae664
+    - name: Layer_Frame_6
       frameIndex: 6
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 45d33b99abe932042b74c60f0003c67f
-    - name: Sapo_muito_foda_Frame_7
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: f2da6dd6bb279bf41a56aa6599a8ae4d
+    - name: Layer_Frame_7
       frameIndex: 7
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 73882e5bdd77ba94eb29f2c8daafdc54
-    - name: Sapo_muito_foda_Frame_8
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: f50443750df304d489f95bed19ded580
+    - name: Layer_Frame_8
       frameIndex: 8
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 7ae30b8a5796ef94a904ee20b615178a
-    - name: Sapo_muito_foda_Frame_9
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 003a09e5f6861fd48832e3b30cca0cc2
+    - name: Layer_Frame_9
       frameIndex: 9
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 70ebe98eb47a03c4a925686a00c3c24e
-    - name: Sapo_muito_foda_Frame_10
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: c8f27154c28a87a45ba4f8438e4c773f
+    - name: Layer_Frame_10
       frameIndex: 10
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: fcf3d404f5b173b41a19433f5d222ef2
-    - name: Sapo_muito_foda_Frame_11
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 9d5cb6324f70b994f8cb5e8f9d92d53c
+    - name: Layer_Frame_11
       frameIndex: 11
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 9310031389729d248b34f5fd88f27659
-    - name: Sapo_muito_foda_Frame_12
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: b4aa5c0af6b383c40aba6662862d96b9
+    - name: Layer_Frame_12
       frameIndex: 12
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 4d2405fd269fa544faa980b2992f5469
-    - name: Sapo_muito_foda_Frame_13
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 528b155b0c0e08042be6c61de7d40f2a
+    - name: Layer_Frame_13
       frameIndex: 13
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 44fd0aac017b92c4dbad30d6b1d4088c
-    - name: Sapo_muito_foda_Frame_14
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 2f2dc312b54a1a74a80f54fb513f06de
+    - name: Layer_Frame_14
       frameIndex: 14
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 5436aee58fccb9a4490b0981f0aafb39
-    - name: Sapo_muito_foda_Frame_15
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 5bbeef51c48dd034db043bc17268bb93
+    - name: Layer_Frame_15
       frameIndex: 15
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 56abc61c4158c1a4b8aba4a8c6cc1670
-    - name: Sapo_muito_foda_Frame_16
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 991125e07c16a654e972482d06868544
+    - name: Layer_Frame_16
       frameIndex: 16
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: d1ea1f8ab643bd2409f1528c33d6361a
+        x: 27
+        y: 20
+        width: 180
+        height: 216
+      spriteId: 88e2fbbb72db1554cba5598027b97d2a
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 384, y: 384}
+  canvasSize: {x: 256, y: 256}
