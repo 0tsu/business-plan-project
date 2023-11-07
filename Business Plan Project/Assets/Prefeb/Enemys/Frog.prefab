@@ -33,7 +33,8 @@ Transform:
   m_LocalPosition: {x: -5.7629046, y: -2.0630074, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5119557388315939220}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6244402688142032467
@@ -185,7 +186,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   player: {fileID: 0}
-  distanceExemple: {x: 0, y: 0, z: 0}
   minDistace: 1.5
-  mediumDistace: 3
   maxDistace: 5
+  spawnSpell: {fileID: 5119557388315939220}
+  spell: {fileID: 2760129704682735355, guid: 87832a6307d8db947ab3baaa2a1b82dd, type: 3}
+--- !u!1 &6600125756753966680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5119557388315939220}
+  m_Layer: 0
+  m_Name: SpawnSpell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5119557388315939220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6600125756753966680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.305, y: 0.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6275487972604698603}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

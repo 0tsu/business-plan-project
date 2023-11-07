@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] Transform player;
     [SerializeField] float minDistace;
-    [SerializeField] float mediumDistace;
     [SerializeField] float maxDistace;
-    float enemyDistance;
+    [SerializeField] Transform spawnSpell;
+    [SerializeField] GameObject spell;
 
     void Start()
     {
@@ -23,14 +24,26 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if(EnemyDistance() > minDistace && EnemyDistance() < maxDistace)
+        {
+            EnemyAttack();
+            return;
+        }
         EnemyMoviment();
         
     }
-    void EnemyMoviment()
+
+    void EnemyAttack()
     {
-        enemyDistance = Vector2.Distance(transform.position, player.position);
-           
-        if(enemyDistance <= minDistace) 
+        GameObject spellObj = Instantiate(spell, spawnSpell.position, spawnSpell.rotation);
+        Rigidbody2D spellRig = spellObj.GetComponent<Rigidbody2D>();
+        spellRig.AddForce(spellRig.transform.forward);
+        Destroy(spellObj, 0.1f);
+    }
+
+    void EnemyMoviment()
+    {  
+        if(EnemyDistance() <= minDistace) 
         {
             rb2D.velocity = player.position.x > transform.position.x ? Vector2.left * speed : Vector2.right * speed;
             Flip(-1);
@@ -40,7 +53,11 @@ public class EnemyController : MonoBehaviour
     }
     void Flip(float DirectionFlip)
     {
-        float scale = transform.position.x >= player.position.x ? 1.0f * DirectionFlip : -1.0f * DirectionFlip;
+        float scale = transform.position.x >= player.position.x ? 1f * DirectionFlip : -1f * DirectionFlip;
         transform.localScale = new Vector2(scale, 1f);
+    }
+    float EnemyDistance()
+    {
+        return Vector2.Distance(transform.position, player.position);
     }
 }
