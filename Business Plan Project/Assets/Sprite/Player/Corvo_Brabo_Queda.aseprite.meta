@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 7bacb594c45e23b4dbb7750be516140f
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Corvo_Brabo_Queda_Clip
+    second: {fileID: 7400000, guid: 1488d96360c967a45a872c199a917142, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -78,7 +83,7 @@ ScriptedImporter:
     defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 0
+    generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
@@ -90,12 +95,12 @@ ScriptedImporter:
     defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 0
+    generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638336577190003413
+  platformSettingsDirtyTick: 638356919016510114
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,8 +126,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Corvo_Brabo_Queda_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 1}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -141,8 +146,8 @@ ScriptedImporter:
     uvTransform: {x: 35, y: 44}
   - name: Corvo_Brabo_Queda_Frame_1
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -161,8 +166,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Corvo_Brabo_Queda_Frame_2
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -181,8 +186,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 44}
   - name: Corvo_Brabo_Queda_Frame_3
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -201,8 +206,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 84}
   - name: Corvo_Brabo_Queda_Frame_4
     originalName: 
-    pivot: {x: 0.47826087, y: 1}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -221,8 +226,8 @@ ScriptedImporter:
     uvTransform: {x: 35, y: 4}
   - name: Corvo_Brabo_Queda_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 1}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

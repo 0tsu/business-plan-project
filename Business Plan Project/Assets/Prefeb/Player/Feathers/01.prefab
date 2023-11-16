@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3642093185864268571}
   - component: {fileID: 5462181094436948186}
   - component: {fileID: 2397099488705754541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,10 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 480f19693c77f0d46bd1662182c21cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   speed: 1
   smoothness: 0.3
-  attackPosition: 1
+  attackPosition: 2
   rotationSpeed: 10
   frequency: 0.3
   amplitude: 0.1
@@ -140,10 +139,10 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 264
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -153,10 +152,10 @@ CapsuleCollider2D:
     m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 264
   m_CallbackLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 264
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0

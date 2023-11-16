@@ -7,7 +7,8 @@ public class Feather : MonoBehaviour
 {
     public delegate void OnAttackEndedAction();
     public static event OnAttackEndedAction OnAttackEnd;
-    [SerializeField] PlayerControl player;
+    PlayerControl player;
+    Collider2D collider2d;
 
     [Header("Move variables")]
     [SerializeField] float speed = 1f;
@@ -36,6 +37,7 @@ public class Feather : MonoBehaviour
 
     void Start(){
         player = FindAnyObjectByType<PlayerControl>();
+        collider2d = GetComponent<Collider2D>();
     }
     void Update(){
         if (isAttacking)
@@ -58,6 +60,7 @@ public class Feather : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
     public void Attack(){
+        collider2d.enabled = true;
         isAttacking = true;
 
         targetPosition = player.transform.position + new Vector3(attackPosition * player.transform.localScale.x, 0f, 0f);
@@ -70,14 +73,22 @@ public class Feather : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speedAttack * Time.deltaTime);
         
         if((transform.position - targetPosition).magnitude < 0.05f){
-            isAttacking = false;
-            StartCoroutine(IsAttackEnd());
+            AttackFinish();
         }
     }
-    IEnumerator IsAttackEnd(){
-        yield return new WaitForSeconds(0.5f);
-        if (OnAttackEnd != null){
-            OnAttackEnd();
-        }
+   
+    void AttackFinish()
+    {
+        isAttacking = false;
+        OnAttackEnd();
+        collider2d.enabled = false;
     }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        IHit obj = collision.GetComponent<IHit>();
+        AttackFinish();
+        obj.TakeHit();
+    }
+
 }

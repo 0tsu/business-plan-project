@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: a3eae3be89a1cd8498d0dfc12a93c0e7
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Corvo_Brabo_Queda_chao_Clip
+    second: {fileID: 7400000, guid: bc2157ead2739ec49a9cd9ed786b34fb, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -78,7 +83,7 @@ ScriptedImporter:
     defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 0
+    generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
@@ -90,12 +95,12 @@ ScriptedImporter:
     defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 0
+    generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638336577190003413
+  platformSettingsDirtyTick: 638356925808539535
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +126,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Corvo_Brabo_Queda_chao_Frame_0
     originalName: 
-    pivot: {x: 0.2962963, y: 1.3913044}
+    pivot: {x: 0.5, y: 0.67}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +146,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 36}
   - name: Corvo_Brabo_Queda_chao_Frame_1
     originalName: 
-    pivot: {x: 0.26923078, y: 1.3333334}
+    pivot: {x: 0.5, y: 0.67}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,8 +166,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Corvo_Brabo_Queda_chao_Frame_2
     originalName: 
-    pivot: {x: 0.3, y: 1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -181,8 +186,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 67}
   - name: Corvo_Brabo_Queda_chao_Frame_3
     originalName: 
-    pivot: {x: 0.47368422, y: 1.032258}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

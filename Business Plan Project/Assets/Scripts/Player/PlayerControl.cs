@@ -1,10 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerControl : MonoBehaviour, IHit
 {
     Animator anim;
     Rigidbody2D rb2D;
@@ -12,7 +13,8 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] float speed;
 
     [Header("Attack variables")]
-    public bool isAttacking;
+    private bool isAttacking;
+    private bool onAttack;
 
     List<Feather> fthrs = new List<Feather>();
     public void AddFeather(Feather fthr)
@@ -27,9 +29,11 @@ public class PlayerControl : MonoBehaviour
     //Jump variables
     [SerializeField] float jumpForce;
     [SerializeField] float buttonPressedTime;
+    float jumpCount;
 
     [SerializeField] Transform GroundCollider;
     [SerializeField] LayerMask GroundLayer;
+    private bool hit;
 
     void Start()
     {
@@ -43,6 +47,7 @@ public class PlayerControl : MonoBehaviour
 
     void OnEnable(){
         Feather.OnAttackEnd += OnFeatherAttackEnded;
+
     }
 
     void OnDisable(){
@@ -63,39 +68,36 @@ public class PlayerControl : MonoBehaviour
     private void AnimatorController()
     {
         anim.SetBool("Walk", Mathf.Abs(xAxis) > 0f);
+        anim.SetBool("Attack", onAttack);
+        anim.SetBool("JumpFall", jumpCount < 1);
     }
 
-#region ControllerFunctions
+
     #region MoveSystem
     public void Move()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
         float moveX = xAxis * speed * Time.deltaTime;
-        rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);
-        
+        rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);   
     }
     #endregion
     #region JumpSytem
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(GroundCollider.position, GroundCollider.localScale);
-    }
+
     private bool IsGround()
     {
         return Physics2D.OverlapBox(GroundCollider.position, GroundCollider.localScale, 0f, GroundLayer);
     }
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump") && IsGround())
+        if (IsGround()) jumpCount = 1;
+        if (Input.GetButtonDown("Jump") && jumpCount >= 1)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+            jumpCount--;
         }
     }
     #endregion
-
-#endregion
 
     void Flip()
     {
@@ -107,9 +109,13 @@ public class PlayerControl : MonoBehaviour
 
 #region AttackFunctions
 
-    void OnFeatherAttackEnded()
+    async void OnFeatherAttackEnded()
     {
+        onAttack = false;
+        await Task.Delay(100);
         isAttacking = false;
+        
+
     }
 
     public void Attack()
@@ -117,6 +123,7 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
         {
             isAttacking = true;
+            onAttack = true;
             fthrs[indexFeather].Attack();
             SelectNextFeather();
         }
@@ -129,4 +136,23 @@ public class PlayerControl : MonoBehaviour
     }
 
     #endregion
+    public void TakeHit()
+    {
+        Debug.Log(name);
+        hit = false;
+        rb2D.velocity = new Vector2(10f * transform.localScale.x, 5f);
+        hit = true;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject != gameObject)
+            Debug.Log(collision);
+            TakeHit();
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(GroundCollider.position, GroundCollider.localScale);
+    }
 }

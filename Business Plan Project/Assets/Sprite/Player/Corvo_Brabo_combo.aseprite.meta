@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 6b27aac960f5abd449da1e9c04a7d685
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Corvo_Brabo_combo_Clip
+    second: {fileID: 7400000, guid: 4ba5b0645360b334f9277372fd5b4c5d, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638336577190003413
+  platformSettingsDirtyTick: 638356917547050937
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,15 +126,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Corvo_Brabo_combo_Frame_0
     originalName: 
-    pivot: {x: 0.47368422, y: 1.032258}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 37
+      x: 4
       y: 4
-      width: 19
-      height: 31
+      width: 25
+      height: 29
     spriteID: b5654114835c4834eaa2b573b3a8d1f0
     spriteBone: []
     spriteOutline: []
@@ -138,16 +143,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 37, y: 4}
+    uvTransform: {x: 4, y: 4}
   - name: Corvo_Brabo_combo_Frame_1
     originalName: 
-    pivot: {x: 0.28, y: 1.1034483}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 41
       width: 25
       height: 29
     spriteID: e58da576390318e43ad3f1e2da870946
@@ -158,16 +163,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 41}
   - name: Corvo_Brabo_combo_Frame_2
     originalName: 
-    pivot: {x: 0.27272728, y: 1.1034483}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 41
+      x: 37
+      y: 4
       width: 22
       height: 29
     spriteID: 1165172926b9c4146828cd261ba40e35
@@ -178,17 +183,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 41}
+    uvTransform: {x: 37, y: 4}
   - name: Corvo_Brabo_combo_Frame_3
     originalName: 
-    pivot: {x: 0.2857143, y: 1.1034483}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 78
-      width: 21
+      width: 22
       height: 29
     spriteID: ed855cadc9896c74d97e5c753680206f
     spriteBone: []
@@ -199,6 +204,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 78}
+  - name: Corvo_Brabo_combo_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 41
+      width: 21
+      height: 29
+    spriteID: ebeb80ddfd4694f48b05b10beb96c82f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 41}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -211,10 +236,10 @@ ScriptedImporter:
     - name: Corvo_Brabo_combo_Frame_0
       frameIndex: 0
       cellRect:
-        x: 23
+        x: 25
         y: 0
-        width: 19
-        height: 31
+        width: 25
+        height: 29
       spriteId: b5654114835c4834eaa2b573b3a8d1f0
     - name: Corvo_Brabo_combo_Frame_1
       frameIndex: 1
@@ -237,9 +262,17 @@ ScriptedImporter:
       cellRect:
         x: 26
         y: 0
-        width: 21
+        width: 22
         height: 29
       spriteId: ed855cadc9896c74d97e5c753680206f
+    - name: Corvo_Brabo_combo_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 26
+        y: 0
+        width: 21
+        height: 29
+      spriteId: ebeb80ddfd4694f48b05b10beb96c82f
     linkedCells: []
     parentIndex: -1
   platformSettings:
