@@ -4,6 +4,6 @@ using UnityEngine;
 
 interface IHit
 {
-    public void TakeHit();
+    public void OnHit(Vector2 knockBack);
     
 }

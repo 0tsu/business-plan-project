@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4608502806357592066}
   - component: {fileID: 8674857364806751815}
   - component: {fileID: 2614822366395545500}
+  - component: {fileID: 6107794406999623846}
+  - component: {fileID: 6657794330596802736}
   m_Layer: 8
   m_Name: Frog
   m_TagString: Untagged
@@ -35,6 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5119557388315939220}
+  - {fileID: 7979908847110133740}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6244402688142032467
@@ -122,7 +125,7 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -135,7 +138,7 @@ CapsuleCollider2D:
     m_Bits: 264
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 639
+    m_Bits: 576
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -190,7 +193,40 @@ MonoBehaviour:
   maxDistace: 3
   spell: {fileID: 2760129704682735355, guid: 87832a6307d8db947ab3baaa2a1b82dd, type: 3}
   spawnSpell: {fileID: 5119557388315939220}
-  life: 3
+  WallCollider: {fileID: 7979908847110133740}
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &6107794406999623846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940387340340787383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8064c7ca06c116438cb035e26cfaa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 50
+  invulnerabilityTime: 0.5
+  knockBack: {x: -3, y: -3}
+--- !u!114 &6657794330596802736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940387340340787383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c565c2d22d06fa14f9b4e7e0da2e15de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  canDestroy: 0
 --- !u!1 &6600125756753966680
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +254,37 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.305, y: 0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6275487972604698603}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7142275660640329006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7979908847110133740}
+  m_Layer: 6
+  m_Name: WallCollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7979908847110133740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142275660640329006}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.319, y: 0.02, z: 0}
+  m_LocalScale: {x: 0.0375, y: 0.6268555, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6275487972604698603}

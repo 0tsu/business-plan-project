@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7921444103799402185}
   - component: {fileID: 1336999230205840515}
   - component: {fileID: -1831906498217282281}
-  - component: {fileID: 3120050280931006966}
   - component: {fileID: 2686510533117954640}
+  - component: {fileID: -3510424632530320819}
   m_Layer: 7
   m_Name: Spell
   m_TagString: Untagged
@@ -122,18 +122,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &3120050280931006966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2760129704682735355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6cbf8acb07e004faaf775e7b7408e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2686510533117954640
 Rigidbody2D:
   serializedVersion: 4
@@ -161,3 +149,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-3510424632530320819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2760129704682735355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c565c2d22d06fa14f9b4e7e0da2e15de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  canDestroy: 1

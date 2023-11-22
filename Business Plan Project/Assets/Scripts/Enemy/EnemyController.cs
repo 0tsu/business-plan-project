@@ -5,10 +5,13 @@ using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(Damageable))]
 public class EnemyController : MonoBehaviour, IHit
 {
     Animator anim;
     Rigidbody2D rb2D;
+    Damageable damageable;
+    TouchingController touchingController;
 
     [Header("Move Variables")]
     [SerializeField] float speed;
@@ -21,21 +24,21 @@ public class EnemyController : MonoBehaviour, IHit
     [SerializeField] Transform spawnSpell;
     float spellSpeed = 8.5f;
     float cooldown;
-    [SerializeField]int life;
 
     
-    private bool hit;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         player = FindFirstObjectByType<PlayerControl>().transform;
+        damageable = GetComponent<Damageable>();
+        touchingController = GetComponent<TouchingController>();
     }
 
     void Update()
     {
-        IsDead();
+        if (player == null) return;
         Flip();
         if (EnemyDistance() > minDistace && EnemyDistance() < maxDistace)
         {
@@ -60,15 +63,11 @@ public class EnemyController : MonoBehaviour, IHit
     }
 
     void EnemyMoviment()
-    {  
-        if (!hit)
+    {
+        if (!damageable.canMove || touchingController.IsWalled()) return;
+        if(EnemyIsRun() && !damageable.isHit) 
         {
-            if(EnemyIsRun()) 
-            {
-                rb2D.velocity = player.position.x > transform.position.x ? Vector2.left * speed : Vector2.right * speed;
-
-                return;
-            }
+            rb2D.velocity = player.position.x > transform.position.x ? Vector2.left * speed : Vector2.right * speed;
         }
     }
     void Flip()
@@ -76,6 +75,13 @@ public class EnemyController : MonoBehaviour, IHit
         float scale = transform.position.x >= player.position.x ? (EnemyIsRun() ? -1f :1f) : -1f;
         transform.localScale = new Vector2(scale, 1f);
     }
+
+    public void OnHit(Vector2 knockBack)
+
+    {
+        rb2D.velocity = new Vector2(knockBack.x, rb2D.velocity.y + knockBack.y);
+    }
+
     float EnemyDistance()
     {
         return Vector2.Distance(transform.position, player.position);
@@ -83,25 +89,5 @@ public class EnemyController : MonoBehaviour, IHit
     bool EnemyIsRun()
     {
         return EnemyDistance() <= minDistace;
-    }
-
-    void IsDead()
-    {
-        if (life <= 0)
-        {
-            Debug.Log("Eu morri");
-            Destroy(gameObject, 0.2f);
-        }
-    }
-
-    async public void TakeHit()
-    {
-        Debug.Log(name);
-        life--;
-        rb2D.AddForce(new Vector2((EnemyIsRun() ? -5f : 5f) * transform.localScale.x, 5f), ForceMode2D.Impulse);
-        Debug.Log(life);
-        hit = true;
-        await Task.Delay(1000);
-        hit = false;
     }
 }

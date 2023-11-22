@@ -45,6 +45,7 @@ public class Feather : MonoBehaviour
             MoveAttack();
             return;
         }
+        OnDead();
         Move();
         RotationFeather();
     }
@@ -77,6 +78,12 @@ public class Feather : MonoBehaviour
         }
     }
    
+    void OnDead()
+    {
+        if(!player.isAlive)
+            Destroy(gameObject,0.2f);
+    }
+
     void AttackFinish()
     {
         isAttacking = false;
@@ -86,9 +93,7 @@ public class Feather : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        IHit obj = collision.GetComponent<IHit>();
         AttackFinish();
-        obj.TakeHit();
     }
 
 }

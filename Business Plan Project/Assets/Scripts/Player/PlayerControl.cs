@@ -5,16 +5,17 @@ using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(Damageable), typeof(TouchingController))]
 public class PlayerControl : MonoBehaviour, IHit
 {
     Animator anim;
     Rigidbody2D rb2D;
+    Damageable damageable;
+    TouchingController touchingController;
 
-    [SerializeField] float speed;
 
     [Header("Attack variables")]
-    private bool isAttacking;
-    private bool onAttack;
+    private bool canAttacking;
 
     List<Feather> fthrs = new List<Feather>();
     public void AddFeather(Feather fthr)
@@ -22,44 +23,50 @@ public class PlayerControl : MonoBehaviour, IHit
         fthrs.Add(fthr);
     }
 
-    [SerializeField]int indexFeather;
+    [SerializeField] int indexFeather;
     //Move variables
-    public float xAxis {  get; private set; }
+    [SerializeField] float speed;
+    float xAxis;
+    float moveX;
 
     //Jump variables
     [SerializeField] float jumpForce;
-    [SerializeField] float buttonPressedTime;
-    float jumpCount;
 
-    [SerializeField] Transform GroundCollider;
-    [SerializeField] LayerMask GroundLayer;
-    private bool hit;
+
+
+
+    
+    public bool isAlive { get { return anim.GetBool(AnimationString.IsAlive); } }
+    
 
     void Start()
     {
-        anim = GetComponent<Animator>();
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0;
+        anim = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        damageable = GetComponent<Damageable>();
+        touchingController = GetComponent<TouchingController>();
     }
 
-#region Events
+    #region Events
 
-    void OnEnable(){
+    void OnEnable() {
         Feather.OnAttackEnd += OnFeatherAttackEnded;
 
     }
 
-    void OnDisable(){
+    void OnDisable() {
         Feather.OnAttackEnd -= OnFeatherAttackEnded;
     }
 
     #endregion
 
-    void Update() 
+    void Update()
     {
-        Attack();
+        if (!damageable.isAlive) return;
         Move();
+        Attack();
         PlayerJump();
         Flip();
         AnimatorController();
@@ -67,9 +74,8 @@ public class PlayerControl : MonoBehaviour, IHit
 
     private void AnimatorController()
     {
-        anim.SetBool("Walk", Mathf.Abs(xAxis) > 0f);
-        anim.SetBool("Attack", onAttack);
-        anim.SetBool("JumpFall", jumpCount < 1);
+        anim.SetBool(AnimationString.IsGround, touchingController.IsGround());
+
     }
 
 
@@ -77,25 +83,27 @@ public class PlayerControl : MonoBehaviour, IHit
     public void Move()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
-        float moveX = xAxis * speed * Time.deltaTime;
-        rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);   
+        moveX = xAxis * speed * Time.deltaTime;
+    }
+    private void FixedUpdate()
+    {
+        anim.SetBool(AnimationString.Walk, Mathf.Abs(xAxis) > 0f);
+        if (!damageable.canMove || touchingController.IsWalled()) return;
+        if (!damageable.isHit)
+        {
+            rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);
+        }
     }
     #endregion
     #region JumpSytem
-
-
-    private bool IsGround()
-    {
-        return Physics2D.OverlapBox(GroundCollider.position, GroundCollider.localScale, 0f, GroundLayer);
-    }
     void PlayerJump()
     {
-        if (IsGround()) jumpCount = 1;
-        if (Input.GetButtonDown("Jump") && jumpCount >= 1)
+        if (Input.GetButtonDown("Jump") && touchingController.IsGround())
         {
+            anim.SetTrigger(AnimationString.Jump);
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
-            jumpCount--;
         }
+        
     }
     #endregion
 
@@ -111,19 +119,16 @@ public class PlayerControl : MonoBehaviour, IHit
 
     async void OnFeatherAttackEnded()
     {
-        onAttack = false;
-        await Task.Delay(100);
-        isAttacking = false;
-        
-
+        await Task.Delay(200);
+        canAttacking = false;
     }
 
     public void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.J) && !canAttacking)
         {
-            isAttacking = true;
-            onAttack = true;
+            anim.SetTrigger(AnimationString.Attack);
+            canAttacking = true;
             fthrs[indexFeather].Attack();
             SelectNextFeather();
         }
@@ -136,23 +141,12 @@ public class PlayerControl : MonoBehaviour, IHit
     }
 
     #endregion
-    public void TakeHit()
-    {
-        Debug.Log(name);
-        hit = false;
-        rb2D.velocity = new Vector2(10f * transform.localScale.x, 5f);
-        hit = true;
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
 
-        if (collision.gameObject != gameObject)
-            Debug.Log(collision);
-            TakeHit();
-    }
-    private void OnDrawGizmos()
+
+    public void OnHit(Vector2 knockBack)
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(GroundCollider.position, GroundCollider.localScale);
+        rb2D.velocity = new Vector2(knockBack.x, rb2D.velocity.y + knockBack.y);
     }
+
+
 }
