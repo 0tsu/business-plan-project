@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5965799196008965530}
   - component: {fileID: 8563949076619351034}
   - component: {fileID: 4650204133111076140}
+  - component: {fileID: 1776561307229660829}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f62739dfd48dd0c4e97a324cb80fecf7, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,14 +221,6 @@ MonoBehaviour:
   indexFeather: 0
   speed: 12
   jumpForce: 9
-  GroundCollider: {fileID: 5739397355831577967}
-  GroundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  WallCollider: {fileID: 3630752402246515022}
-  WallLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!114 &4650204133111076140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,10 +233,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8064c7ca06c116438cb035e26cfaa16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  currentHealth: 0
-  invulnerabilityTime: 0
-  knockBack: {x: 0, y: 0}
+  animator: {fileID: 0}
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8563949076619351034}
+        m_TargetAssemblyTypeName: PlayerControl, Assembly-CSharp
+        m_MethodName: OnHit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  maxHealth: 5
+  currentHealth: 50
+  invulnerabilityTime: 0.5
+--- !u!114 &1776561307229660829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4282868939630981425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9839e8141366e40ad6f7c3978f3682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GroundCollider: {fileID: 5739397355831577967}
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 2056
+  WallCollider: {fileID: 3630752402246515022}
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &8704389700015545801
 GameObject:
   m_ObjectHideFlags: 0

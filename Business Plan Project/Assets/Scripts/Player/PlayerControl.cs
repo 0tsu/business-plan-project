@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Damageable), typeof(TouchingController))]
-public class PlayerControl : MonoBehaviour, IHit
+public class PlayerControl : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D rb2D;
@@ -75,7 +75,7 @@ public class PlayerControl : MonoBehaviour, IHit
     private void AnimatorController()
     {
         anim.SetBool(AnimationString.IsGround, touchingController.IsGround());
-
+        anim.SetFloat(AnimationString.Yvelocity, rb2D.velocity.y);
     }
 
 
@@ -93,12 +93,14 @@ public class PlayerControl : MonoBehaviour, IHit
         {
             rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);
         }
+
+
     }
     #endregion
     #region JumpSytem
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump") && touchingController.IsGround())
+        if (Input.GetButtonDown("Jump") && (touchingController.IsGround()))
         {
             anim.SetTrigger(AnimationString.Jump);
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
@@ -112,7 +114,7 @@ public class PlayerControl : MonoBehaviour, IHit
         float scaleX = transform.localScale.x;
         scaleX = xAxis < 0 ? -1 : scaleX;
         scaleX = xAxis > 0 ? 1 : scaleX;
-        transform.localScale = new Vector3(scaleX, 1, 1);
+        transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
     }
 
 #region AttackFunctions

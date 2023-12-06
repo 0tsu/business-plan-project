@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2614822366395545500}
   - component: {fileID: 6107794406999623846}
   - component: {fileID: 6657794330596802736}
+  - component: {fileID: 8080584872041311884}
   m_Layer: 8
   m_Name: Frog
   m_TagString: Untagged
@@ -193,10 +194,6 @@ MonoBehaviour:
   maxDistace: 3
   spell: {fileID: 2760129704682735355, guid: 87832a6307d8db947ab3baaa2a1b82dd, type: 3}
   spawnSpell: {fileID: 5119557388315939220}
-  WallCollider: {fileID: 7979908847110133740}
-  WallLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!114 &6107794406999623846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,10 +206,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8064c7ca06c116438cb035e26cfaa16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2614822366395545500}
+        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
+        m_MethodName: OnHit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   maxHealth: 5
   currentHealth: 50
   invulnerabilityTime: 0.5
-  knockBack: {x: -3, y: -3}
 --- !u!114 &6657794330596802736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +238,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   canDestroy: 0
+  knockBack: {x: -3, y: 3}
+--- !u!114 &8080584872041311884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940387340340787383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9839e8141366e40ad6f7c3978f3682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GroundCollider: {fileID: 0}
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  WallCollider: {fileID: 7979908847110133740}
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &6600125756753966680
 GameObject:
   m_ObjectHideFlags: 0

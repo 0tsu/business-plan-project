@@ -15,4 +15,8 @@ internal class AnimationString
     internal static string IsAlive = "IsAlive";
     internal static string IsHit = "IsHit";
     internal static string HitTrigger = "HitTrigger";
+    internal static string VeryWait = "VeryWait";
+    public static string OnSetting = "OnSetting";
+    public static string Yvelocity = "Yvelocity"; 
+
 }

@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Damageable))]
-public class EnemyController : MonoBehaviour, IHit
+public class EnemyController : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D rb2D;
@@ -77,8 +77,8 @@ public class EnemyController : MonoBehaviour, IHit
     }
 
     public void OnHit(Vector2 knockBack)
-
     {
+        anim.SetBool(AnimationString.IsHit, true);
         rb2D.velocity = new Vector2(knockBack.x, rb2D.velocity.y + knockBack.y);
     }
 

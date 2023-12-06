@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2000980325, guid: 8a12a02def163e645865f27e51c8f45a, type: 3}
-  m_Color: {r: 0.3764706, g: 0.30588236, b: 0.05882353, a: 1}
+  m_Color: {r: 0.1792453, g: 0.14332108, b: 0.017586326, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -177,3 +177,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   canDestroy: 0
+  knockBack: {x: 5, y: 3}

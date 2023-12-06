@@ -1,3 +1,4 @@
+using Assets.Scripts.Feathers;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ public class Feather : MonoBehaviour
     public static event OnAttackEndedAction OnAttackEnd;
     PlayerControl player;
     Collider2D collider2d;
+    JumpableFeather jumpableFeather;
 
     [Header("Move variables")]
     [SerializeField] float speed = 1f;
@@ -38,6 +40,7 @@ public class Feather : MonoBehaviour
     void Start(){
         player = FindAnyObjectByType<PlayerControl>();
         collider2d = GetComponent<Collider2D>();
+        jumpableFeather = GetComponent<JumpableFeather>();
     }
     void Update(){
         if (isAttacking)
@@ -46,8 +49,9 @@ public class Feather : MonoBehaviour
             return;
         }
         OnDead();
-        Move();
         RotationFeather();
+        if (jumpableFeather != null && jumpableFeather.FeatherTest) return;
+        Move();
     }
     public void Move(){
         float yOffset = Mathf.Sin(Time.time * speed * frequency) * amplitude;

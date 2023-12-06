@@ -163,3 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   canDestroy: 1
+  knockBack: {x: -3, y: 3}
