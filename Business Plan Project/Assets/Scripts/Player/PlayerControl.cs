@@ -13,31 +13,32 @@ public class PlayerControl : MonoBehaviour
     Damageable damageable;
     TouchingController touchingController;
 
+    public delegate void OnAttackAction();
+    public static event OnAttackAction OnAttack;
 
     [Header("Attack variables")]
     private bool canAttacking;
 
-    List<Feather> fthrs = new List<Feather>();
-    public void AddFeather(Feather fthr)
-    {
-        fthrs.Add(fthr);
-    }
-
-    [SerializeField] int indexFeather;
     //Move variables
     [SerializeField] float speed;
     float xAxis;
     float moveX;
 
+
     //Jump variables
     [SerializeField] float jumpForce;
 
-
-
-
-    
     public bool isAlive { get { return anim.GetBool(AnimationString.IsAlive); } }
-    
+
+    void OnEnable()
+    {
+        AttackFeather.OnAttackEnd += OnFeatherAttackEnded;
+    }
+
+    void OnDisable()
+    {
+        AttackFeather.OnAttackEnd -= OnFeatherAttackEnded;
+    }
 
     void Start()
     {
@@ -48,19 +49,6 @@ public class PlayerControl : MonoBehaviour
         damageable = GetComponent<Damageable>();
         touchingController = GetComponent<TouchingController>();
     }
-
-    #region Events
-
-    void OnEnable() {
-        Feather.OnAttackEnd += OnFeatherAttackEnded;
-
-    }
-
-    void OnDisable() {
-        Feather.OnAttackEnd -= OnFeatherAttackEnded;
-    }
-
-    #endregion
 
     void Update()
     {
@@ -75,14 +63,13 @@ public class PlayerControl : MonoBehaviour
     private void AnimatorController()
     {
         anim.SetBool(AnimationString.IsGround, touchingController.IsGround());
-        anim.SetFloat(AnimationString.Yvelocity, rb2D.velocity.y);
     }
 
 
     #region MoveSystem
     public void Move()
     {
-        xAxis = Input.GetAxisRaw("Horizontal");
+        xAxis = Input.GetAxis("Horizontal");
         moveX = xAxis * speed * Time.deltaTime;
     }
     private void FixedUpdate()
@@ -93,8 +80,6 @@ public class PlayerControl : MonoBehaviour
         {
             rb2D.velocity = new Vector2(moveX * speed, rb2D.velocity.y);
         }
-
-
     }
     #endregion
     #region JumpSytem
@@ -103,9 +88,9 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetButtonDown("Jump") && (touchingController.IsGround()))
         {
             anim.SetTrigger(AnimationString.Jump);
-            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+            rb2D.velocity = new Vector2(rb2D.velocity.x * jumpForce * speed, jumpForce);
         }
-        
+
     }
     #endregion
 
@@ -131,24 +116,14 @@ public class PlayerControl : MonoBehaviour
         {
             anim.SetTrigger(AnimationString.Attack);
             canAttacking = true;
-            fthrs[indexFeather].Attack();
-            SelectNextFeather();
+            OnAttack();
         }
-
     }
-    
-    private void SelectNextFeather(){
-        indexFeather++;
-        indexFeather = indexFeather < fthrs.Count ? indexFeather : 0;
-    }
-
     #endregion
-
 
     public void OnHit(Vector2 knockBack)
     {
         rb2D.velocity = new Vector2(knockBack.x, rb2D.velocity.y + knockBack.y);
     }
-
 
 }
